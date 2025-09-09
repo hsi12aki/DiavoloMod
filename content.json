@@ -1,1 +1,700 @@
 //content file for diavolo
+{
+  "Format": "2.6.1",
+  "ConfigSchema": {
+    "Pipsqueak-Lite Mode": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "For English players: Reduces 'Pipsqueak' from Caleb's vocabulary by like 99%. Tragic...",
+      "Section": "Dialogue Settings"
+    },
+    "Caleb Kids": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Keep set to 'true' for Caleb's kids to look like him. Disable to allow other mods to overwrite kid appearances.",
+      "Section": "Dialogue Settings"
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Monday"
+      },
+      "Value": "Mon"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Tuesday"
+      },
+      "Value": "Tue"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Wednesday"
+      },
+      "Value": "Wed"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Thursday"
+      },
+      "Value": "Thu"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Friday"
+      },
+      "Value": "Fri"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Saturday"
+      },
+      "Value": "Sat"
+    },
+    {
+      "Name": "Weekday",
+      "When": {
+        "DayOfWeek": "Sunday"
+      },
+      "Value": "Sun"
+    },
+    {
+      "Name": "TimeOfDay",
+      "Value": "Morning",
+      "When": {
+        "Time": "{{Range: 600, 1200}}"
+      }
+    },
+    {
+      "Name": "TimeOfDay",
+      "Value": "Afternoon",
+      "When": {
+        "Time": "{{Range: 1200, 1930}}"
+      }
+    },
+    {
+      "Name": "TimeOfDay",
+      "Value": "Night",
+      "When": {
+        "Time": "{{Range: 1930, 2550}}"
+      }
+    },
+    ///journal
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Hearts:Caleb": "0"
+      },
+      "Value": "Caleb.Journal.Empty"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Hearts:Caleb": "1"
+      },
+      "Value": "Caleb.Journal.Generic{{Random: 0,1}}"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Hearts:Caleb": "{{Range: 2, 4}}"
+      },
+      "Value": "Caleb.Journal.LowHearts{{Random: 0,1,2,3,4}}"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Hearts:Caleb": "{{Range: 5, 7}}"
+      },
+      "Value": "Caleb.Journal.Midhearts{{Random: 0,1,2,3}}"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Hearts:Caleb": "{{Range: 7, 8}}"
+      },
+      "Value": "Caleb.Journal.HighHearts{{Random: 0,1,2,3,4}}"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Relationship:Caleb": "Dating"
+      },
+      "Value": "Caleb.Journal.MaxHearts{{Random: 0,1,2,3,4}}"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Relationship:Caleb": "Engaged"
+      },
+      "Value": "Caleb.Journal.Married"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "spouse": "Caleb"
+      },
+      "Value": "{{Random: Caleb.Journal.Generic{{Random: 0,1}}, Caleb.Journal.LowHearts{{Random: 0,1,2,3,4}}, Caleb.Journal.Midhearts{{Random: 0,1,2,3}}, Caleb.Journal.HighHearts{{Random: 0,1,2,3,4}}, Caleb.Journal.MaxHearts{{Random: 0,1,2,3,4}}, Caleb.Journal.Married}}"
+    },
+    {
+      "Name": "DailyJournal",
+      "When": {
+        "Season": "Fall",
+        "Day": "21"
+      },
+      "Value": "Caleb.Journal.Clinic"
+    },
+    //heart pools for relationship contextual dialogue. pooh and abagaianye from the SDV discord were the brains behind this, huge props to those two. this was the exact kind of thing i had in mind for custom npc dialogue, so this is not an original idea from me. in my opinion, this is THE ideal way to present randomized and progressive relationship dialogue LOL
+    {
+      "Name": "CalebHeartsDialogue",
+      "Value": "Caleb.NoPool.{{Random: 1,2,3,4,5}}"
+    },
+    {
+      "Name": "CalebHeartsDialogue",
+      "When": {
+        "Hearts:Caleb": "{{Range: 0, 4}}",
+        "Query: {{Random: 1,2,3,4,5,6,7,8,9,10}} > 3": true
+      },
+      "Value": "Caleb.LowPool.{{Random: 1,2,3,4,5}}"
+    },
+    {
+      "Name": "CalebHeartsDialogue",
+      "When": {
+        "Hearts:Caleb": "{{Range: 4, 8}}",
+        "Query: {{Random: 1,2,3,4,5,6,7,8,9,10}} > 2": true
+      },
+      "Value": "Caleb.MidPool.{{Random: 1,2,3,4,5,6,7,8,9,10,11,12,13}}"
+    },
+    {
+      "Name": "CalebHeartsDialogue",
+      "When": {
+        "Hearts:Caleb": "{{Range: 8, 12}}",
+        "Query: {{Random: 1,2,3,4,5,6,7,8,9,10}} > 2": true
+      },
+      "Value": "Caleb.HighPool.{{Random: 1,2,3,4,5,6,7,8,9,10,11,12,13}}"
+    },
+    {
+      "Name": "CalebHeartsDialogue",
+      "When": {
+        "Relationship:Caleb": "Dating",
+        "Query: {{Random: 1,2,3,4,5,6,7,8,9,10}} > 3": true
+      },
+      "Value": "Caleb.DatingPool.{{Random: 1,2,3,4,5,6,7,8,9,10,11,12,13}}"
+    },
+    //dailies
+    {
+      "Name": "DailyDialogue",
+      "Value": "{{Random:{{Season}}_{{Random:0++1++2++3++4++5|inputSeparator=++}}++{{CalebHeartsDialogue}}++{{Weekday}}_{{Random:0++1++2++3++4++5|inputSeparator=++}}|inputSeparator=++}}",
+      "When": {},
+      "Update": "DayEnding"
+    },
+    {
+      "Name": "DailyDialogueWeather",
+      "Value": "{{Random:{{Season}}_{{Random:0++1++2++3++4++5|inputSeparator=++}}++{{CalebHeartsDialogue}}++{{Weekday}}_{{Random:0++1++2++3++4++5|inputSeparator=++}}++{{Weather}}_{{Random:0++1++2++3++4++5|inputSeparator=++}}++{{Weather}}_{{Random:0++1++2++3++4++5|inputSeparator=++}}|inputSeparator=++}}",
+      "When": {},
+      "Update": "DayEnding"
+    }
+  ],
+  "Changes": [
+    {
+      //loading all important files when using default pipsqueak script
+      "LogName": "Data includes with nickname",
+      "Action": "Include",
+      "FromFile": "data/Schedule.json, data/Dialogue.json, data/MarriageDialogue.json, data/Festivals.json, data/Disposition.json,",
+      "When": {
+        "Pipsqueak-Lite Mode": "false"
+      }
+    },
+    {
+      //loading all important files when using alternative pipsqueak-reduced script
+      "LogName": "Data includes without nickname",
+      "Action": "Include",
+      "FromFile": "data/Schedule.json, data/NoNickname/Dialogue_NN.json, data/NoNickname/MarriageDialogue_NN.json, data/NoNickname/Festivals_NN.json, data/Disposition.json,",
+      "When": {
+        "Pipsqueak-Lite Mode": "true"
+      }
+    },
+    //rest of the loads
+    {
+      "LogName": "Caleb's Mail Patches",
+      "Action": "Include",
+      "FromFile": "data/Mail.json",
+      "When": {
+        "Pipsqueak-Lite Mode": "false"
+      }
+    },
+    {
+      "LogName": "Caleb's Mail Patches",
+      "Action": "Include",
+      "FromFile": "data//NoNickname/Mail_NN.json",
+      "When": {
+        "Pipsqueak-Lite Mode": "true"
+      }
+    },
+    {
+      "LogName": "Caleb's custom letter BG",
+      "Action": "Load",
+      "Target": "Mods/Shiiteyan.Caleb/MailBackground",
+      "FromFile": "assets/CalBG.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Shiiteyan.SaloonAttic": {
+          "CreateOnLoad": {
+            "MapPath": "Maps/Shiiteyan.SaloonAttic"
+          },
+          "Music": [
+            {
+              "Track": "grandpas_theme",
+              "Condition": "TIME 2000 2600"
+            }
+          ],
+          "DisplayName": "Saloon Attic",
+          "FormerLocationNames": [
+            "Custom_SaloonAttic"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Shiiteyan.CalebWarp": {
+          "CreateOnLoad": {
+            "MapPath": "Maps/Shiiteyan.CalebWarp"
+          },
+          "DisplayName": "Out of Town",
+          "FormerLocationNames": [
+            "Custom_CalebWarps",
+            "Custom_Calebwarps"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Caleb's Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Caleb",
+      "FromFile": "assets/Schedule.json"
+    },
+    {
+      "LogName": "Load Caleb's Schedule Strings",
+      "Action": "Load",
+      "Target": "Strings/schedules/Caleb",
+      "FromFile": "assets/Strings.json"
+    },
+    {
+      "LogName": "Load Caleb's Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Caleb",
+      "FromFile": "assets/Dialogue.json"
+    },
+    {
+      "LogName": "Load Caleb's Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "FromFile": "assets/MarriageDialogue.json"
+    },
+    {
+      "LogName": "Caleb's Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Caleb",
+      "FromFile": "assets/Art/{{Target}}.png"
+    },
+    {
+      "LogName": "Caleb's Sprites",
+      "Action": "Load",
+      "Target": "Characters/Caleb",
+      "FromFile": "assets/Art/Characters/Caleb.png"
+    },
+    {
+      "LogName": "Caleb's Sprites",
+      "Action": "Load",
+      "Target": "Characters/Caleb_Spring",
+      "FromFile": "assets/Art/Characters/Caleb_Spring.png"
+    },
+    {
+      "LogName": "Caleb's Events",
+      "Action": "Include",
+      "FromFile": "data/Events.json",
+      "When": {
+        "Pipsqueak-Lite Mode": "false"
+      }
+    },
+    {
+      "LogName": "Caleb's Events",
+      "Action": "Include",
+      "FromFile": "data/NoNickname/Events_NN.json",
+      "When": {
+        "Pipsqueak-Lite Mode": "true"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Saloon",
+      "FromFile": "assets/Maps/SaloonAlt.tmx",
+      "ToArea": {
+        "X": 31,
+        "Y": 3,
+        "Width": 1,
+        "Height": 3
+      }
+    },
+    //Patches attic depending on relationship
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Shiiteyan.SaloonAttic",
+      "FromFile": "assets/Maps/SaloonAtticEarly.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 13
+      },
+      "When": {
+        "Relationship:Caleb": "Unmet"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Shiiteyan.SaloonAttic",
+      "FromFile": "assets/Maps/SaloonAttic2.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 13
+      },
+      "When": {
+        "Hearts:Caleb": "4,5,6,7,8,9,10"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Shiiteyan.SaloonAttic",
+      "FromFile": "assets/Maps/SaloonAtticEarly.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 13
+      },
+      "When": {
+        "Relationship:Caleb": "Married"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Shiiteyan.SaloonAttic",
+      "FromFile": "assets/Maps/SaloonAtticF.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 13,
+        "Height": 13
+      },
+      "When": {
+        "Relationship:Caleb": "Engaged"
+      }
+    },
+    //Map Strings
+    {
+      "LogName": "Map Strings",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "Caleb.Journal": "{{i18n:{{DailyJournal}}}}",
+        "Caleb.JournalF": "{{i18n:Caleb.Journal.Married}}",
+        "Caleb.EarlyRoom0": "{{i18n:Caleb.EarlyRoom0}}",
+        "Caleb.EarlyRoom1": "{{i18n:Caleb.EarlyRoom1}}",
+        "Caleb.Room0": "{{i18n:Caleb.Room0}}",
+        "Caleb.Room1": "{{i18n:Caleb.Room1}}",
+        "Caleb.Room2": "{{i18n:Caleb.Room2}}",
+        "Caleb.Room3": "{{i18n:Caleb.Room3}}",
+        "Caleb.Room4": "{{i18n:Caleb.Room4}}"
+      },
+      "When": {
+        "Pipsqueak-Lite Mode": "false"
+      }
+    },
+    {
+      "LogName": "Map Strings",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "Caleb.Journal": "{{i18n:{{DailyJournal}}_NN}}",
+        "Caleb.JournalF": "{{i18n:Caleb.Journal.Married_NN}}",
+        "Caleb.EarlyRoom0": "{{i18n:Caleb.EarlyRoom0}}",
+        "Caleb.EarlyRoom1": "{{i18n:Caleb.EarlyRoom1}}",
+        "Caleb.Room0": "{{i18n:Caleb.Room0}}",
+        "Caleb.Room1": "{{i18n:Caleb.Room1}}",
+        "Caleb.Room2": "{{i18n:Caleb.Room2}}",
+        "Caleb.Room3": "{{i18n:Caleb.Room3}}",
+        "Caleb.Room4": "{{i18n:Caleb.Room4}}"
+      },
+      "When": {
+        "Pipsqueak-Lite Mode": "true"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/BusStop",
+      "MapProperties": {
+        "NPCWarp": "22 8 Desert 18 27 12 9 Shiiteyan.CalebWarp 6 6"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      //SVE patch to let Caleb's warp and Claire's warp play nicely
+      "Action": "EditMap",
+      "Target": "Maps/BusStop",
+      "Priority": "Late",
+      "MapProperties": {
+        "NPCWarp": "22 8 Custom_DayEnd_WarpRoom 3 3 23 8 Custom_DayEnd_WarpRoom 3 3 12 8 Shiiteyan.CalebWarp 6 6"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    //Map loads
+    {
+      "Action": "Load",
+      "Target": "Maps/CalebspouseRoom",
+      "FromFile": "assets/Maps/CalebspouseRoom.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Shiiteyan.SaloonAttic",
+      "FromFile": "assets/Maps/SaloonAttic.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Shiiteyan.CalebWarp",
+      "FromFile": "assets/Maps/CalebWarps.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/ForestPicnic",
+      "FromFile": "assets/Maps/ForestPicnic.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/ForestPicnicEnd",
+      "FromFile": "assets/Maps/ForestPicnicEnd.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/CCStorm",
+      "FromFile": "assets/Maps/CommunityCenter_Storm.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/StormCG",
+      "FromFile": "assets/Maps/StormCG.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/PicnicCG",
+      "FromFile": "assets/Maps/PicnicCG.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/PicnicFallCG",
+      "FromFile": "assets/Maps/PicnicFallCG.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpouseRooms",
+      "Entries": {
+        "Caleb": "CalebspouseRoom/0"
+      }
+    },
+    {
+      "LogName": "Caleb Animations",
+      "Action": "Include",
+      "FromFile": "data/Animations.json"
+    },
+    //Map tilesheet loads
+    {
+      "Action": "Load",
+      "Target": "Maps/CustomFurnitureSheet",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/CraftablesAlt",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/picnicTileSheet",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/picnicTileSheet2",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/CraftablesEdits",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/storm_cg",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/spring_picnic_cg",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/fall_picnic_cg",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Baby",
+      "FromFile": "assets/Baby.png,",
+      "When": {
+        "Relationship:Caleb": "Married",
+        "Caleb Kids": "true"
+      }
+    },
+    //Child asset loads
+    {
+      "Action": "Load",
+      "Target": "Characters/Baby_Dark",
+      "FromFile": "assets/Baby_dark.png",
+      "When": {
+        "Relationship:Caleb": "Married",
+        "Caleb Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Toddler",
+      "FromFile": "assets/Toddler.png,",
+      "When": {
+        "Relationship:Caleb": "Married",
+        "Caleb Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Toddler_girl",
+      "FromFile": "assets/Toddler_girl.png,",
+      "When": {
+        "Relationship:Caleb": "Married",
+        "Caleb Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Toddler_dark",
+      "FromFile": "assets/Toddler_dark.png,",
+      "When": {
+        "Relationship:Caleb": "Married",
+        "Caleb Kids": "true"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Toddler_girl_dark",
+      "FromFile": "assets/Toddler_girl_dark.png,",
+      "When": {
+        "Relationship:Caleb": "Married",
+        "Caleb Kids": "true"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Caleb",
+      "FromFile": "assets/Art/Characters/Caleb_{{Season}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "Season": "{{Season}}"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Caleb",
+      "FromFile": "assets/Art/Characters/Caleb_BathSpa.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "BathHouse_Pool"
+      }
+    },
+    {
+      //Saloon door unlocking
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 70
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 14 24 Saloon"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "CalebSaloonKeyUnlocked"
+      }
+    },
+    {
+      //Mail Flags
+      "LogName": "Caleb Mail entries",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "Shiiteyan.Caleb_MailCalebTalkedToday": {
+          "Id": "Shiiteyan.Caleb_MailCalebTalkedToday",
+          "Condition": "PLAYER_HAS_MAIL Current CalebTalkedToday",
+          "Trigger": "DayEnding",
+          "Action": "RemoveMail Current CalebTalkedToday",
+          "MarkActionApplied": false
+        },
+        "Shiiteyan.Caleb_MailCalebPicnic": {
+          "Id": "Shiiteyan.Caleb_MailCalebPicnic",
+          "Condition": "PLAYER_HEARTS Current Caleb 5",
+          "Trigger": "DayStarted",
+          "Action": "AddMail Current CalPicnicInvite",
+          "MarkActionApplied": true,
+          "When": {
+            "Season": "Spring, Summer, Fall"
+          }
+        },
+        //CT and mail flags to trigger the Saloon key dialogue with Gus
+        "Shiiteyan.Caleb_SaloonUnlockCT": {
+          "Id": "Shiiteyan.SaloonUnlockCT",
+          "Condition": "PLAYER_HEARTS Current Caleb 4",
+          "Trigger": "DayStarted",
+          "Actions": [
+            "AddMail Current CalebSaloonKey1",
+            "AddConversationTopic CalebSaloonKey1 14"
+          ],
+          "MarkActionApplied": true
+        }
+      }
+    }
+  ]
+}
