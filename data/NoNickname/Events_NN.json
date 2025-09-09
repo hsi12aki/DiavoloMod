@@ -1,0 +1,157 @@
+{
+	"Changes": [
+		{
+			//caleb intro event, available after 7 ingame days
+			"LogName": "Saloon Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Saloon",
+			"Entries": {
+				"99704850/j 7/": "breezy/26 19/farmer -100 -100 1 Gus 30 20 0 Caleb -102 -101 0 Lewis -101 -100 0/addConversationTopic CalebIntroTopic 7/addBigProp 30 19 163/addObject 27 17 926/addObject 28 17 326 4/addBigProp 28 19 163/addBigProp 32 17 163/broadcastEvent true useLocalFarmer/fade/move Gus -2 0 0/playSound trashcan/pause 1000/move Gus 2 0 0/playSound trashcan/pause 1000/move Gus -4 0 0/move Gus 0 -2 1/pause 700/move Gus 0 2 1/move Gus 2 0 0/warp farmer 14 24/move farmer 0 -3 1 true/pause 900/faceDirection Gus 3/pause 500/speak Gus \"{{i18n:Caleb.Intro000a_NN}}#$action AddMail all CalebIntroComplete Received\"/pause 500/move farmer 9 0 1/speak Gus \"{{i18n:Caleb.Intro000b_NN}}\"/warp Caleb 6 20/pause 100/pause 500/speak Gus \"{{i18n:Caleb.Intro000c_NN}}\"/advancedMove Caleb false 6 0 0 1 7 0 1 2000/pause 200/speak Gus \"{{i18n:Caleb.Intro000d_NN}}\"/speak Caleb \"{{i18n:Caleb.Intro001a_NN}}\"/skippable/emote farmer 8/faceDirection farmer 3 true/pause 600/faceDirection farmer 2 true/animate farmer false true 100 94/jump farmer/emote farmer 16/eyes 0 0/stopAnimation farmer/faceDirection farmer 3 true/speak Caleb \"{{i18n:Caleb.Intro001_NN}}\"/pause 1000/quickQuestion {{i18n:Caleb.Intro002_NN}}#{{i18n:Caleb.Intro002a_NN}}#{{i18n:Caleb.Intro002b_NN}}#{{i18n:Caleb.Intro002c_NN}}(break)speak Caleb \"{{i18n:Caleb.Intro003a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Intro003b_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Intro003c_NN}}\"/beginSimultaneousCommand/move farmer -3 0 3/speak Caleb \"{{i18n:Caleb.Intro004_NN}}\"/pause 700/speak Gus \"{{i18n:Caleb.Intro005_NN}}\"/move Gus -3 0 3/move Gus 0 2 2/move Gus -11 0 3/faceDirection Caleb left true/faceDirection farmer left true/move Gus 0 3 2/faceDirection farmer down true/faceDirection Caleb down true/playSound doorClose/warp Gus -100 -100/pause 700/faceDirection Caleb right/faceDirection farmer left/pause 1500/emote farmer 40/endSimultaneousCommand/pause 800/animate Caleb false true 100 6 7/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 300/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/stopAnimation Caleb/faceDirection Caleb 1/pause 200/speak Caleb \"{{i18n:Caleb.Intro006_NN}}\"/pause 700/animate Caleb false true 100 6 7/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/stopAnimation Caleb/faceDirection Caleb 1/animate Caleb false true 100 6 7/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/positionOffset Caleb 2 0/pause 100/stopAnimation Caleb/faceDirection Caleb 1/speak Caleb \"{{i18n:Caleb.Intro006a_NN}}\"/pause 100/faceDirection Caleb 1/pause 300/speak Caleb \"{{i18n:Caleb.Intro007_NN}}\"/pause 100/faceDirection farmer right/faceDirection farmer up/faceDirection farmer down/emote farmer 60/pause 1000/beginSimultaneousCommand/playSound doorClose/warp Lewis 14 24/faceDirection farmer 3 true true/faceDirection Caleb 3 true/textAboveHead Lewis \"Hello, hello!\"/endSimultaneousCommand/move Lewis 0 -3 1/speak Lewis \"{{i18n:Caleb.Intro008_NN}}\"/speak Caleb \"{{i18n:Caleb.Intro009_NN}}\"/speak Lewis \"{{i18n:Caleb.Intro010_NN}}\"/quickQuestion {{i18n:Caleb.Intro011_NN}}?#{{i18n:Caleb.Intro011a_NN}}#{{i18n:Caleb.Intro011b_NN}}#{{i18n:Caleb.Intro011c_NN}}(break)speak Caleb \"{{i18n:Caleb.Intro012a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Intro012b_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Intro012c_NN}}\"/speak Lewis \"{{i18n:Caleb.Intro013_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Intro014_NN}}\"/pause 1000/move Lewis 0 3 2/beginSimultaneousCommand/playSound doorClose/warp Lewis 1000 1000/faceDirection farmer 2 true/faceDirection Caleb 2 true/pause 2000/faceDirection farmer 3 true/faceDirection Caleb 1 true/speak Caleb \"{{i18n:Caleb.Intro015_NN}}\"/beginSimultaneousCommand/emote Caleb 32 true/emote farmer 32/endSimultaneousCommand/globalFade/viewport -1000 -1000/end"
+			}
+		},
+		{
+			//caleb heart 4 event, triggers in town from 530 PM till 830 PM
+			"LogName": "Heart4 Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+				"99704854/f Caleb 1000/d Thu/t 1730 2030/": "sad_kid/13 21/farmer 11 20 0 Caleb 12 11 1/addConversationTopic Caleb4heart 14/skippable/viewport move 0 -2 3000/move farmer 0 -4 0/pause 2300/faceDirection Caleb 2/speak Caleb \"{{i18n:Caleb.4Heart000_NN}}\"/pause 500/emote farmer 8/speak Caleb \"{{i18n:Caleb.4Heart001_NN}}\"/pause 200/move farmer 1 0 0/viewport move 0 -1 1500/move farmer 0 -4 0/pause 700/faceDirection Caleb 1/pause 500/faceDirection farmer right true/pause 400/speak Caleb \"{{i18n:Caleb.4Heart002_NN}}\"/faceDirection farmer 1 true/pause 400/speak Caleb \"{{i18n:Caleb.4Heart003_NN}}\"/pause 250/speak Caleb \"{{i18n:Caleb.4Heart004_NN}}\"/speak Caleb \"{{i18n:Caleb.4Heart005_NN}}\"/speak Caleb \"{{i18n:Caleb.4Heart006_NN}}\"/pause 1000/faceDirection Caleb down/pause 1600/faceDirection Caleb right/pause 1200/speak Caleb \"{{i18n:Caleb.4Heart007_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.4Heart008_NN}}\"/pause 300/speak Caleb \"{{i18n:Caleb.4Heart009_NN}}\"/pause 700/faceDirection farmer up true/pause 700/speak Caleb \"{{i18n:Caleb.4Heart010_NN}}\"/pause 1000/faceDirection farmer right true/pause 800/speak Caleb \"{{i18n:Caleb.4Heart011_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.4Heart012_NN}}\"/speak Caleb \"{{i18n:Caleb.4Heart013_NN}}\"/speak Caleb \"{{i18n:Caleb.4Heart014_NN}}\"/faceDirection farmer up true/pause 300/emote farmer 32/pause 700/advancedMove Caleb false 3 0 0 1 2 1000/pause 500/advancedMove farmer false 1 0 0 2 2 0 0 1000/globalFade/viewport -1000 -1000/stopMusic/end"
+			}
+		},
+		{
+			//caleb's unique mines death event. unfortunately i believe this replaces all other possible mines death rescues from triggering. this one is specifically tied to being married to caleb.
+			"LogName": "Mines Married PlayerKilled Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Mine",
+			"When": {
+				"Spouse": "Caleb"
+			},
+			"Entries": {
+				"PlayerKilled": "none/-100 -100/farmer 19 10 2 Marlon 18 10 1 Caleb 19 9 2/pause 1500/showFrame 5/message \"{{i18n:Caleb.PlayerKilledIntro1}}\"/pause 1000/message \"{{i18n:Caleb.PlayerKilledIntro2}}\"/pause 1000/message \"{{i18n:Caleb.PlayerKilled002_NN}}\"/pause 1000/message \"{{i18n:Caleb.PlayerKilled003_NN}}\"/viewport 19 10 true/pause 1000/speak Caleb \"{{i18n:Caleb.PlayerKilled004_NN}}\"/pause 1000/speak Marlon \"{{i18n:Caleb.PlayerKilled005_NN}}\"/pause 1000/speak Caleb \"{{i18n:Caleb.PlayerKilled006_NN}}\"/pause 1000/speak Caleb \"{{i18n:Caleb.PlayerKilled007_NN}}\"/pause 1000/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Caleb \"{{i18n:Caleb.PlayerKilled008_NN}}\""
+			}
+		},
+		{
+			//caleb's unique mines death event. unfortunately i believe this replaces all other possible mines death rescues from triggering. requires atleast heart level 4
+			"LogName": "Mines PlayerKilled Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Mine",
+			"When": {
+				"Hearts:Caleb": "4,5,6,7,8,9,10"
+			},
+			"Entries": {
+				"PlayerKilled": "none/-100 -100/farmer 19 10 2 Marlon 18 10 1 Caleb 19 9 2/pause 1500/showFrame 5/message \"{{i18n:Caleb.PlayerKilledIntro1}}\"/pause 1000/message \"{{i18n:Caleb.PlayerKilledIntro2}}\"/pause 1000/message \"{{i18n:Caleb.PlayerKilled002_NN}}\"/pause 1000/message \"{{i18n:Caleb.PlayerKilled003_NN}}\"/viewport 19 10 true/pause 1000/speak Caleb \"{{i18n:Caleb.PlayerKilled004_NN}}\"/pause 1000/speak Marlon \"{{i18n:Caleb.PlayerKilled005_NN}}\"/pause 1000/speak Caleb \"{{i18n:Caleb.PlayerKilled006_NN}}\"/pause 1000/speak Caleb \"{{i18n:Caleb.PlayerKilled007_NN}}\"/pause 1000/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue Caleb \"{{i18n:Caleb.PlayerKilled008_NN}}\""
+			}
+		},
+		{
+			//caleb's unique skull cavern death event. tied specifically to being married to caleb
+			"LogName": "SkullCavern PlayerKilled Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Hospital",
+			"When": {
+				"Spouse": "Caleb"
+			},
+			"Entries": {
+				"PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Caleb 21 11 2/skippable/pause 1500/showFrame 5/message \"{{i18n:Caleb.PlayerKilledIntro3}}\"/pause 1000/message \"{{i18n:Caleb.SkullPlayerKilled001_NN}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:Caleb.SkullPlayerKilled003_NN}}\"/pause 500/emote Caleb 40/pause 500/speak Caleb \"{{i18n:Caleb.SkullPlayerKilled004_NN}}\"/pause 500/speak Harvey \"{{i18n:Caleb.SkullPlayerKilled005_NN}}\"/move Harvey 1 0 0/move Caleb 0 1 3/pause 200/advancedMove Harvey false 0 -4 3 50 -8 0 1 50/pause 500/stopAnimation farmer/faceDirection farmer 1/speak Caleb \"{{i18n:Caleb.SkullPlayerKilled006_NN}}\"/pause 500//speak Caleb \"{{i18n:Caleb.SkullPlayerKilled008_NN}}\"/pause 500/emote farmer 28/pause 1000/hospitaldeath/end dialogue Caleb \"{{i18n:Caleb.PlayerKilled008_NN}}\""
+			}
+		},
+		{
+			//caleb 11 heart event, gives the player the option for a marriage nickname. available any day except thursday and sunday, between 11AM and 2PM, with a 40% chance of triggering when entering the farmhouse
+			"LogName": "Farmhouse.2 MarriedNickname Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Farmhouse",
+			"When": {
+				"Spouse": "Caleb",
+				"FarmhouseUpgrade": "1"
+			},
+			"Entries": {
+				"99704860/O Caleb/t 1100 1400/d Thu Sun/f Caleb 2750/r 0.4/L 1": "distantBanjo/-1000 -1000/farmer -100 -100 0 Caleb 4 5 0/skippable/ambientLight 0 0 0/viewport 7 5 true/move Caleb 2 0 0/pause 1500/move Caleb -1 0 0/pause 500/move Caleb -3 0 0/pause 1000/move Caleb 2 0 0/pause 250/warp farmer 9 11/playSound doorClose/move farmer 0 -1 0/pause 250/faceDirection Caleb 2/speak Caleb \"{{i18n:Caleb.Question3000a_NN}}\"/advancedMove farmer false 0 -1 -6 0 0 -4 4 2000//move Caleb 2 0 0/pause 500/move Caleb -2 0 0/pause 200/move Caleb 1 0 0/pause 250/move Caleb -1 0 0/pause 5000/faceDirection farmer 1/pause 500/faceDirection Caleb 0/faceDirection farmer 0/faceDirection Caleb 3/faceDirection farmer 3/faceDirection farmer 0/faceDirection farmer 3/faceDirection farmer 0/pause 200/emote Caleb 8/speak Caleb \"{{i18n:Caleb.Question3000_NN}}\"/pause 500/faceDirection farmer 0/faceDirection farmer 1/pause 500/faceDirection farmer 3/emote farmer 28/pause 500/faceDirection farmer 1/pause 700/speak Caleb \"{{i18n:Caleb.Question3001_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Question3002_NN}}\"/pause 500/quickquestion {{i18n:Caleb.Question3003_NN}}#{{i18n:Caleb.Question3004_NN}}#{{i18n:Caleb.Question3005_NN}}#{{i18n:Caleb.Question3006_NN}}(break)speak Caleb \"{{i18n:Caleb.Question3004a_NN}}#$action AddMail Current NicknameBaby received\"(break)speak Caleb \"{{i18n:Caleb.Question3005a_NN}}#$action AddMail Current NicknameHoney received\"(break)speak Caleb \"{{i18n:Caleb.Question3006a_NN}}\"/emote Caleb 32/pause 1000/fade/viewport -100 -100/end"
+			}
+		},
+		{
+			//caleb 11 heart event, marriage nickname, same as above but for the lvl 3 farmhouse upgrade to cover any potential issues with a player playing on a pre existing late game save
+			"LogName": "Farmhouse.3 MarriedNickname Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Farmhouse",
+			"When": {
+				"Spouse": "Caleb",
+				"FarmhouseUpgrade": "2"
+			},
+			"Entries": {
+				"99704861/O Caleb/t 1100 1400/d Thu Sun/f Caleb 2750/r 0.4/k 99704860/L 2": "distantBanjo/-1000 -1000/farmer -100 -100 0 Caleb 22 24 0/skippable/ambientLight 0 0 0/viewport 25 23 true/move Caleb 2 0 0/pause 1500/move Caleb -1 0 0/pause 500/move Caleb -3 0 0/pause 1000/move Caleb 2 0 0/pause 250/warp farmer 27 30/playSound doorClose/move farmer 0 -1 0/pause 250/faceDirection Caleb 2/speak Caleb \"{{i18n:Caleb.Question3000a_NN}}\"/advancedMove farmer false 0 -1 -2 0 0 -4 3 2000/move Caleb 2 0 0/pause 500/move Caleb -2 0 0/pause 200/move Caleb 1 0 0/pause 500/move Caleb -1 0 0/pause 230/move Caleb 2 0 0/pause 500/faceDirection farmer right/pause 500/faceDirection Caleb up/faceDirection farmer down/faceDirection Caleb right/faceDirection farmer up/faceDirection farmer left/faceDirection farmer right/faceDirection farmer up/pause 200/emote Caleb 8/speak Caleb \"{{i18n:Caleb.Question3000_NN}}\"/faceDirection farmer left/pause 500/faceDirection farmer up/faceDirection farmer right/faceDirection farmer down/emote farmer 28/pause 500/faceDirection farmer left/pause 700/speak Caleb \"{{i18n:Caleb.Question3001_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Question3002_NN}}\"/pause 500/quickquestion {{i18n:Caleb.Question3003_NN}}#{{i18n:Caleb.Question3004_NN}}#{{i18n:Caleb.Question3005_NN}}#{{i18n:Caleb.Question3006_NN}}(break)speak Caleb \"{{i18n:Caleb.Question3004a_NN}}#$action AddMail Current NicknameBaby received\"(break)speak Caleb \"{{i18n:Caleb.Question3005a_NN}}#$action AddMail Current NicknameHoney received\"(break)speak Caleb \"{{i18n:Caleb.Question3006a_NN}}\"/emote Caleb 32/pause 1000/fade/viewport -100 -100/end"
+			}
+		},
+		{
+			//caleb 11 heart event, marriage nickname, same as above but for the final farmhouse upgrade
+			"LogName": "Farmhouse.3 MarriedNickname Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Farmhouse",
+			"When": {
+				"Spouse": "Caleb",
+				"FarmhouseUpgrade": "3"
+			},
+			"Entries": {
+				"99704862/O Caleb/t 1100 1400/d Thu Sun/f Caleb 2750/r 0.4/k 99704860/k 99704861/L 3": "distantBanjo/-1000 -1000/farmer -100 -100 0 Caleb 22 24 0/skippable/ambientLight 0 0 0/viewport 25 23 true/move Caleb 2 0 0/pause 1500/move Caleb -1 0 0/pause 500/move Caleb -3 0 0/pause 1000/move Caleb 2 0 0/pause 250/warp farmer 27 30/playSound doorClose/move farmer 0 -1 0/pause 250/faceDirection Caleb 2/speak Caleb \"{{i18n:Caleb.Question3000a_NN}}\"/advancedMove farmer false 0 -1 -2 0 0 -4 3 2000/move Caleb 2 0 0/pause 500/move Caleb -2 0 0/pause 200/move Caleb 1 0 0/pause 500/move Caleb -1 0 0/pause 230/move Caleb 2 0 0/pause 500/faceDirection farmer right/pause 500/faceDirection Caleb up/faceDirection farmer down/faceDirection Caleb right/faceDirection farmer up/faceDirection farmer left/faceDirection farmer right/faceDirection farmer up/pause 200/emote Caleb 8/speak Caleb \"{{i18n:Caleb.Question3000_NN}}\"/faceDirection farmer left/pause 500/faceDirection farmer up/faceDirection farmer right/faceDirection farmer down/emote farmer 28/pause 500/faceDirection farmer left/pause 700/speak Caleb \"{{i18n:Caleb.Question3001_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Question3002_NN}}\"/pause 500/quickquestion {{i18n:Caleb.Question3003_NN}}#{{i18n:Caleb.Question3004_NN}}#{{i18n:Caleb.Question3005_NN}}#{{i18n:Caleb.Question3006_NN}}(break)speak Caleb \"{{i18n:Caleb.Question3004a_NN}}#$action AddMail Current NicknameBaby received\"(break)speak Caleb \"{{i18n:Caleb.Question3005a_NN}}#$action AddMail Current NicknameHoney received\"(break)speak Caleb \"{{i18n:Caleb.Question3006a_NN}}\"/emote Caleb 32/pause 1000/fade/viewport -100 -100/end"
+			}
+		},
+		{
+			//caleb heart event 2. available when leaving the farmhouse between 6AM and 8AM on a sunny day. requires atleast 2 empty inventory slots. cant be a thursday
+			"LogName": "Heart2 Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"99704852/f Caleb 500/t 600 800/c 2/d Thu/G WEATHER Here Sun Wind": "continue/64 15/farmer 64 16 2 Caleb 64 18 0/addConversationTopic Caleb2heart 14/skippable/pause 1500/speak Caleb \"{{i18n:Caleb.2Heart000_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.2Heart001_NN}}\"/pause 800/itemAboveHead 234/pause 3300/pause 800/awardFestivalPrize 234/pause 1000/speak Caleb \"{{i18n:Caleb.2Heart001a_NN}}\"/pause 200/itemAboveHead 395/pause 3300/pause 800/awardFestivalPrize 395/pause 1000/speak Caleb \"{{i18n:Caleb.2Heart002_NN}}\"/pause 200/speak Caleb \"{{i18n:Caleb.2Heart003_NN}}\"/pause 700/speak Caleb \"{{i18n:Caleb.2Heart004_NN}}\"/pause 700/speak Caleb \"{{i18n:Caleb.2Heart005_NN}}\"/end"
+			}
+		},
+		{
+			//caleb bathhouse event. available when entering the bathhouse while caleb is also there. requires atleast 4 hearts with caleb.
+			"LogName": "Bath Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/BathHouse_Pool",
+			"Entries": {
+				"99704858/G SEASON_DAY summer 20 fall 13 winter 20/t 1500 2100/g female/f Caleb 1000/": "continue/13 9/farmer 6 0 2 Caleb 13 22 2/skippable/swimming Caleb/pause 500/speed farmer -1/move farmer 0 3 2/pause 700/move farmer 0 0 1/pause 700/move farmer 0 3 1/move farmer 4 0 2/move farmer 0 4 2/pause 700/move farmer 0 0 3/pause 700/move farmer 0 0 1/pause 1000/move farmer 0 -3 3/move farmer -4 0 2/move farmer 0 1 2/swimming farmer/viewport move 0 1 3500/move farmer 0 5 1/move farmer 6 0 0/pause 1000/faceDirection farmer 1/pause 700/playSound waterSlosh/playSound slosh/pause 700/faceDirection farmer 2/playSound waterSlosh/playSound slosh/pause 200/playSound slosh/pause 500/emote farmer 8/playSound slosh/pause 200/playSound slosh/pause 200/playSound slosh/pause 1000/speak Caleb \"{{i18n:Caleb.Bathhouse001_NN}}\"/ faceDirection farmer 2/playSound slosh/pause 100/playSound slosh/move Caleb 0 -5 0 true/playSound slosh/pause 300/playSound slosh/animate farmer false true 100 94 94 94/pause 200/viewport move 0 1 3500/playSound slosh/pause 200/playSound slosh/pause 1000/speak Caleb \"{{i18n:Caleb.Bathhouse002_NN}}\"/pause 700/emote farmer 40 true/emote Caleb 40/pause 1000/speak Caleb \"{{i18n:Caleb.Bathhouse003_NN}}\"/quickQuestion {{i18n:Caleb.Bathhouse003qq_NN}}#{{i18n:Caleb.Bathhouse003a_NN}}#{{i18n:Caleb.Bathhouse003b_NN}}(break)speak Caleb \"{{i18n:Caleb.Bathhouse004a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Bathhouse004b_NN}}\"/move Caleb 0 -2 0 true/playSound slosh/playSound slosh/pause 200/playSound slosh/playSound slosh/speak Caleb \"{{i18n:Caleb.Bathhouse005_NN}}\"/speak Caleb \"{{i18n:Caleb.Bathhouse006_NN}}\"/speak Caleb \"{{i18n:Caleb.Bathhouse007_NN}}\"/speak Caleb \"{{i18n:Caleb.Bathhouse008_NN}}\"/pause 400/move Caleb 0 -2 3 true/playSound slosh/pause 200/playSound slosh/stopAnimation farmer/faceDirection farmer 1/speak Caleb \"{{i18n:Caleb.Bathhouse009_NN}}\"/playSound slosh/speak Caleb \"{{i18n:Caleb.Bathhouse010_NN}}\"/stopAnimation farmer/faceDirection farmer 1/startJittering/playSound pullItemFromWater/playSound slosh/playSound waterSlosh/screenFlash 0.5/playSound slosh/stopJittering/shake Caleb 200/pause 500/speak Caleb \"{{i18n:Caleb.Bathhouse011_NN}}\"/pause 400/move Caleb 3 0 3 true/playSound slosh/pause 200/playSound slosh/pause 200/speak Caleb \"{{i18n:Caleb.Bathhouse012_NN}}\"/pause 600/speak Caleb \"{{i18n:Caleb.Bathhouse013_NN}}\"/end"
+			}
+		},
+		{
+			//caleb bathhouse event. incase player is male
+			"LogName": "Bath Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/BathHouse_Pool",
+			"Entries": {
+				"99704858m/G SEASON_DAY summer 20 fall 13 winter 20/t 1500 2100/g male/f Caleb 1000/": "continue/13 9/farmer 21 0 2 Caleb 13 22 2/skippable/swimming Caleb/pause 500/speed farmer -1/move farmer 0 3 2/pause 700/move farmer 0 0 3/pause 700/move farmer 0 3 3/move farmer -4 0 2/move farmer 0 4 2/pause 700/move farmer 0 0 1/pause 700/move farmer 0 0 3/pause 1000/move farmer 0 -3 3/move farmer 4 0 2/move farmer 0 1 2/swimming farmer/viewport move 0 1 3500/move farmer 0 5 3/move farmer -6 0 0/pause 1000/faceDirection farmer 3/pause 700/playSound waterSlosh/playSound slosh/pause 700/faceDirection farmer 2/playSound waterSlosh/playSound slosh/pause 200/playSound slosh/pause 500/emote farmer 8/playSound slosh/pause 200/playSound slosh/pause 200/playSound slosh/pause 1000/speak Caleb \"{{i18n:Caleb.Bathhouse001_NN}}\"/faceDirection farmer 2/playSound slosh/pause 100/playSound slosh/move Caleb 0 -5 0 true/playSound slosh/pause 300/playSound slosh/animate farmer false true 100 94 94 94/pause 200/viewport move 0 1 3500/playSound slosh/pause 200/playSound slosh/pause 1000/speak Caleb \"{{i18n:Caleb.Bathhouse002_NN}}\"/pause 700/emote farmer 40 true/emote Caleb 40/pause 1000/speak Caleb \"{{i18n:Caleb.Bathhouse003_NN}}\"/quickQuestion {{i18n:Caleb.Bathhouse003qq_NN}}#{{i18n:Caleb.Bathhouse003a_NN}}#{{i18n:Caleb.Bathhouse003b_NN}}(break)speak Caleb \"{{i18n:Caleb.Bathhouse004a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Bathhouse004b_NN}}\"/move Caleb 0 -2 0 true/playSound slosh/playSound slosh/pause 200/playSound slosh/playSound slosh/speak Caleb \"{{i18n:Caleb.Bathhouse005_NN}}\"/speak Caleb \"{{i18n:Caleb.Bathhouse006_NN}}\"/speak Caleb \"{{i18n:Caleb.Bathhouse007_NN}}\"/speak Caleb \"{{i18n:Caleb.Bathhouse008_NN}}\"/pause 400/move Caleb 0 -2 1 true/playSound slosh/pause 200/playSound slosh/stopAnimation farmer/faceDirection farmer 3/speak Caleb \"{{i18n:Caleb.Bathhouse009_NN}}\"/playSound slosh/speak Caleb \"{{i18n:Caleb.Bathhouse010_NN}}\"/stopAnimation farmer/faceDirection farmer 3/startJittering/playSound pullItemFromWater/playSound slosh/playSound waterSlosh/screenFlash 0.5/playSound slosh/stopJittering/shake Caleb 200/pause 500/speak Caleb \"{{i18n:Caleb.Bathhouse011_NN}}\"/pause 400/move Caleb -3 0 1 true/playSound slosh/pause 200/playSound slosh/pause 200/speak Caleb \"{{i18n:Caleb.Bathhouse012_NN}}\"/pause 600/speak Caleb \"{{i18n:Caleb.Bathhouse013_NN}}\"/end"
+			}
+		},
+		{
+			//caleb picnic event. available after recieving picnic invitation letter from caleb. available on a sunny day between 12PM and 430PM
+			"LogName": "Picnic Event Spring.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"When": {
+				"Season": "Spring, Summer"
+			},
+			"Entries": {
+				"99704856/f Caleb 1250/LocalMail CalPicnicInvite/G WEATHER Here Sun Wind/t 1200 1630": "continue/65 85/farmer 69 85 2 Caleb 68 92 0/changeToTemporaryMap ForestPicnic/skippable/changeSprite Caleb Spring/animate Caleb false true 100 20 20/speed farmer -1/viewport move 0 2 3000/move farmer 0 5 down/faceDirection Caleb 3/emote Caleb 16/stopAnimation Caleb/faceDirection Caleb 0 true/speak Caleb \"{{i18n:Caleb.Picnic000_NN}}\"/ pause 500/emote farmer 8/speak Caleb \"{{i18n:Caleb.Picnic001_NN}}\"/speak Caleb \"{{i18n:Caleb.Picnic002_NN}}\"/pause 500/faceDirection Caleb 2/speak Caleb \"{{i18n:Caleb.Picnic003_NN}}\"/faceDirection Caleb 0/pause 80/quickQuestion {{i18n:Caleb.Picnic003a_NN}}#{{i18n:Caleb.Picnic003b_NN}}#{{i18n:Caleb.Picnic003c_NN}}#{{i18n:Caleb.Picnic003c2_NN}}(break)speak Caleb \"{{i18n:Caleb.Picnic004a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic004b_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic004b2_NN}}\"/emote farmer 32/speak Caleb \"{{i18n:Caleb.Picnic005_NN}}\"/faceDirection Caleb 0/pause 200/pause 100/speak Caleb \"{{i18n:Caleb.Picnic006_NN}}\"/ move farmer -1 0 2/move farmer  0 1 2/pause 100/pause 500/fade/changeToTemporaryMap PicnicCG true/viewport 10 18 clamp/bgColor 0 0 0/ambientLight 0 0 0/viewport move 0 -1 2000/pause 800/speak Caleb \"{{i18n:Caleb.PicnicBS1_NN}}\"/pause 400/farmerEat 215/pause 500/playSound eat/pause 500/playSound gulp/pause 500/speak Caleb \"{{i18n:Caleb.PicnicBS2_NN}}\"/pause 700/playSound eat/pause 400/playSound gulp/speak Caleb \"{{i18n:Caleb.PicnicBS3_NN}}\"/pause 700/fade/changeToTemporaryMap ForestPicnicEnd/viewport -100 -100/playMusic spring_day_ambient/warp farmer 69 91/positionOffset farmer 0 20/warp Caleb 67 91/faceDirection Caleb 1/faceDirection farmer 3/globalFadetoClear 0.007 true/viewport 65 91/pause 500/pause 200/speak Caleb \"{{i18n:Caleb.PicnicBS4_NN}}\"/pause 200/emote farmer 56/speak Caleb \"{{i18n:Caleb.PicnicBS5_NN}}\"/speak Caleb \"{{i18n:Caleb.Picnic007_NN}}\"/speak Caleb \"{{i18n:Caleb.Picnic008_NN}}\"/quickQuestion {{i18n:Caleb.Picnic008a_NN}}#{{i18n:Caleb.Picnic008b_NN}}#{{i18n:Caleb.Picnic008c_NN}}(break)speak Caleb \"{{i18n:Caleb.Picnic009a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic009b_NN}}\"/pause 1000/faceDirection Caleb 0/faceDirection farmer 0/pause 200/pause 700/speak Caleb \"{{i18n:Caleb.Picnic009d_NN}}\"/pause 500/faceDirection Caleb 1/speak Caleb \"{{i18n:Caleb.Picnic010_NN}}\"/pause 200/faceDirection farmer 3/quickQuestion {{i18n:Caleb.Picnic010a_NN}}#{{i18n:Caleb.Picnic010b_NN}}#{{i18n:Caleb.Picnic010c_NN}}#{{i18n:Caleb.Picnic010d_NN}}(break)speak Caleb \"{{i18n:Caleb.Picnic011a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic011b_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic011c_NN}}\"/pause 200/faceDirection farmer 2 true/animate farmer false true 100 102 103/emote Caleb 56/pause 700/stopAnimation farmer/faceDirection farmer 3/pause 200/faceDirection Caleb 0/pause 200/speak Caleb \"{{i18n:Caleb.Picnic012_NN}}\"/faceDirection farmer 3/pause 700/speak Caleb \"{{i18n:Caleb.Picnic013_NN}}\"/pause 500/faceDirection Caleb 1/speak Caleb \"{{i18n:Caleb.Picnic014_NN}}\"/end"
+			}
+		},
+		{
+			//caleb picnic event. the same as above, but specific to fall for seasonal specific CG art
+			"LogName": "Picnic Event Fall.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"When": {
+				"Season": "Fall"
+			},
+			"Entries": {
+				"99704856/f Caleb 1250/LocalMail CalPicnicInvite/G WEATHER Here Sun Wind/t 1200 1630": "continue/65 85/farmer 69 85 2 Caleb 68 92 0/changeToTemporaryMap ForestPicnic/skippable/changeSprite Caleb Spring/animate Caleb false true 100 20 20/speed farmer -1/viewport move 0 2 3000/move farmer 0 5 down/faceDirection Caleb 3/emote Caleb 16/stopAnimation Caleb/faceDirection Caleb 0 true/speak Caleb \"{{i18n:Caleb.Picnic000_NN}}\"/ pause 500/emote farmer 8/speak Caleb \"{{i18n:Caleb.Picnic001_NN}}\"/speak Caleb \"{{i18n:Caleb.Picnic002_NN}}\"/pause 500/faceDirection Caleb 2/speak Caleb \"{{i18n:Caleb.Picnic003_NN}}\"/faceDirection Caleb 0/pause 80/quickQuestion {{i18n:Caleb.Picnic003a_NN}}#{{i18n:Caleb.Picnic003b_NN}}#{{i18n:Caleb.Picnic003c_NN}}#{{i18n:Caleb.Picnic003c2_NN}}(break)speak Caleb \"{{i18n:Caleb.Picnic004a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic004b_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic004b2_NN}}\"/emote farmer 32/speak Caleb \"{{i18n:Caleb.Picnic005_NN}}\"/faceDirection Caleb 0/pause 200/pause 100/speak Caleb \"{{i18n:Caleb.Picnic006_NN}}\"/ move farmer -1 0 2/move farmer  0 1 2/pause 100/pause 500/fade/changeToTemporaryMap PicnicFallCG true/viewport 10 18 clamp/bgColor 0 0 0/ambientLight 0 0 0/viewport move 0 -1 2000/pause 800/speak Caleb \"{{i18n:Caleb.PicnicBS1_NN}}\"/pause 400/farmerEat 215/pause 500/playSound eat/pause 500/playSound gulp/pause 500/speak Caleb \"{{i18n:Caleb.PicnicBS2_NN}}\"/pause 700/playSound eat/pause 400/playSound gulp/speak Caleb \"{{i18n:Caleb.PicnicBS3_NN}}\"/pause 700/fade/changeToTemporaryMap ForestPicnicEnd/viewport -100 -100/playMusic spring_day_ambient/warp farmer 69 91/positionOffset farmer 0 20/warp Caleb 67 91/faceDirection Caleb 1/faceDirection farmer 3/globalFadetoClear 0.007 true/viewport 65 91/pause 500/pause 200/speak Caleb \"{{i18n:Caleb.PicnicBS4_NN}}\"/pause 200/emote farmer 56/speak Caleb \"{{i18n:Caleb.PicnicBS5_NN}}\"/speak Caleb \"{{i18n:Caleb.Picnic007_NN}}\"/speak Caleb \"{{i18n:Caleb.Picnic008_NN}}\"/quickQuestion {{i18n:Caleb.Picnic008a_NN}}#{{i18n:Caleb.Picnic008b_NN}}#{{i18n:Caleb.Picnic008c_NN}}(break)speak Caleb \"{{i18n:Caleb.Picnic009a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic009b_NN}}\"/pause 1000/faceDirection Caleb 0/faceDirection farmer 0/pause 200/pause 700/speak Caleb \"{{i18n:Caleb.Picnic009d_NN}}\"/pause 500/faceDirection Caleb 1/speak Caleb \"{{i18n:Caleb.Picnic010_NN}}\"/pause 200/faceDirection farmer 3/quickQuestion {{i18n:Caleb.Picnic010a_NN}}#{{i18n:Caleb.Picnic010b_NN}}#{{i18n:Caleb.Picnic010c_NN}}#{{i18n:Caleb.Picnic010d_NN}}(break)speak Caleb \"{{i18n:Caleb.Picnic011a_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic011b_NN}}\"(break)speak Caleb \"{{i18n:Caleb.Picnic011c_NN}}\"/pause 200/faceDirection farmer 2 true/animate farmer false true 100 102 103/emote Caleb 56/pause 700/stopAnimation farmer/faceDirection farmer 3/pause 200/faceDirection Caleb 0/pause 200/speak Caleb \"{{i18n:Caleb.Picnic012_NN}}\"/faceDirection farmer 3/pause 700/speak Caleb \"{{i18n:Caleb.Picnic013_NN}}\"/pause 500/faceDirection Caleb 1/speak Caleb \"{{i18n:Caleb.Picnic014_NN}}\"/end"
+			}
+		},
+		{
+			//caleb storm event. triggers when entering town on a rainy day between 6PM and 10PM. requires atleast heart level 6
+			"LogName": "Lightning Event.Caleb",
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+				"99704855/f Caleb 1500/G WEATHER Here Rain Storm/t 1800 2200": "rain/80 6/farmer 80 3 2 Caleb 60 21 0/skippable/viewport move 0 2 3000/changeSprite Caleb Spring/playSound rainsound/move farmer 0 7 2/playSound thunder_small/move farmer 0 2 2/pause 400/faceDirection farmer 0/startJittering/pause 1000/stopJittering/pause 600/faceDirection farmer 2/viewport move 0 2 1500/move farmer 0 3 down/screenFlash 3/playSound thunder/playSound thunder/pause 200/animate farmer false true 100 94 94 94/jump farmer 9/pause 1000/stopAnimation farmer/playSound thunder_small/viewport move 0 6 1500/speed farmer 7/setRunning/move farmer 0 8 2 true/speed Caleb 6/move Caleb 12 0 1 true/startJittering/speak Caleb \"{{i18n:Caleb.Storm000_NN}}\"/faceDirection farmer 1/faceDirection farmer 0/faceDirection farmer 3 true/pause 200/speak Caleb \"{{i18n:Caleb.Storm001_NN}}\"/emote farmer 28/startJittering/pause 100/speak Caleb \"{{i18n:Caleb.Storm002_NN}}\"/pause 100/stopJittering/viewport move -4 0 4000/move Caleb -7 0 3 true/move farmer -27 0 0 true/move farmer 0 -3 0/warp farmer -100 -100 true/faceDirection farmer 2/speak Caleb \"{{i18n:Caleb.Storm004_NN}}\"/move Caleb -6 0 3 true/pause 400/fade/changeToTemporaryMap CCStorm/halt/warp Caleb 45 13/move Caleb 0 0 1/playMusic rain/animate farmer false true 100 95 95/viewport 46 13 true/warp farmer 46 14/positionOffset farmer 0 -90/pause 1000/speak Caleb \"{{i18n:Caleb.Storm005_NN}}\"/move Caleb 1 0 0/animate Caleb false true 500 21 23/pause 1700/fade/changeToTemporaryMap StormCG true/viewport 10 18 clamp/bgColor 0 0 0/ambientLight 0 0 0/viewport move 0 -1 2000/stopAnimation Caleb/pause 700/speak Caleb \"{{i18n:Caleb.Storm005a_NN}}\" true/pause 400/positionOffset farmer 0 25/animate farmer false true 100 107 107/pause 500/speak Caleb \"{{i18n:Caleb.Storm005b_NN}}\"/pause 500/fade/changeToTemporaryMap CCStorm true/viewport 46 13/move Caleb 1 0 2/animate Caleb false true 100 27 27/positionOffset Caleb 0 -10/speak Caleb \"{{i18n:Caleb.Storm006_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Storm007_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Storm008_NN}}\"/pause 500/animate Caleb false true 100 26 26/pause 200/playSound thunder_small/pause 200/speak Caleb \"{{i18n:Caleb.Storm009_NN}}\"/pause 500/speak Caleb \"{{i18n:Caleb.Storm010_NN}}\"/pause 1500/viewport move 1 -1 5000/pause 400/fade/viewport -100 -100/end"
+			}
+		}
+	]
+}

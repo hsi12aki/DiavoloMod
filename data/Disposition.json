@@ -1,0 +1,427 @@
+{
+  "Changes": [
+    {
+      "LogName": "NPC Disposition",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Caleb": {
+          "DisplayName": "{{i18n:CharacterName.Caleb}}",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "BirthSeason": "summer",
+          "BirthDay": "13",
+          "HomeRegion": "Town",
+          "CanBeRomanced": true,
+          "CanVisitIsland": false,
+          "Calender": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "IntroductionsQuest": false,
+          "UnlockConditions": "PLAYER_HAS_MAIL Any CalebIntroComplete Received",
+          "ItemDeliveryQuests": true,
+          "SpouseRoom": {
+            "MapAsset": "CalebspouseRoom",
+            "MapSourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 6,
+              "Height": 9
+            }
+          },
+          "WinterStarParticipant": false,
+          "SpawnIfMissing": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Shiiteyan.SaloonAttic",
+              "Tile": {
+                "X": 9,
+                "Y": 9
+              },
+              "Direction": "right"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Concessions",
+      "Entries": {
+        "Caleb": {
+          "Name": "Caleb",
+          "LovedTags": [
+            "Apple Slices",
+            "Sour",
+            "Stardrop Sorbet"
+          ],
+          "LikedTags": [
+            "Sandwich",
+            "Salty",
+            "Jasmine Tea",
+            "Fatty",
+            "Gourmet",
+            "Hot",
+            "Burger",
+            "Hummus Snack Pack",
+            "Rock Candy",
+            "Jawbreaker",
+            "Cotton Candy",
+            "Star Cookie",
+            "Ice Cream Sandwich"
+          ],
+          "DislikedTags": [
+            "Joja",
+            "Kale Smoothie",
+            "Black Licorice"
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "Caleb": {
+          "NPCName": "Caleb",
+          "Reactions": [
+            {
+              //sprout movie 
+              "Tag": "spring_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviesprout000}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "sprout_leave",
+                  "Script": "/shake Caleb 3000/pause 500/",
+                  "Text": "{{i18n:Caleb.moviesprout001}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviesprout002}}"
+                }
+              },
+              "ID": "reaction_1"
+            },
+            {
+              //natural wonders 
+              "Tag": "spring_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movienatural000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movienatural001}}"
+                }
+              },
+              "ID": "reaction_2"
+            },
+            {
+              //prairie king 
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movieprairie000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movieprairie001}}"
+                }
+              },
+              "ID": "reaction_3"
+            },
+            {
+              //wumbus 
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviewumbus000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviewumbus001}}"
+                }
+              },
+              "ID": "reaction_4"
+            },
+            {
+              //mysterium 
+              "Tag": "fall_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviemysterium000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviemysterium001}}"
+                }
+              },
+              "ID": "reaction_5"
+            },
+            {
+              //it howls 
+              "Tag": "fall_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviehowls000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviehowls001}}"
+                }
+              },
+              "ID": "reaction_6"
+            },
+            {
+              //coldstar ranch
+              "Tag": "winter_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviecoldstar000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviecoldstar001}}"
+                }
+              },
+              "ID": "reaction_7"
+            },
+            {
+              //zuzu city express 
+              "Tag": "winter_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviezuzu000}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviezuzu001}}"
+                }
+              },
+              "ID": "reaction_8"
+            }
+          ]
+        }
+      },
+      "When": {
+        "Pipsqueak-Lite Mode": "false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "Caleb": {
+          "NPCName": "Caleb",
+          "Reactions": [
+            {
+              //sprout movie 
+              "Tag": "spring_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviesprout000_NN}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "sprout_leave",
+                  "Script": "/shake Caleb 3000/pause 500/",
+                  "Text": "{{i18n:Caleb.moviesprout001_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviesprout002}}"
+                }
+              },
+              "ID": "reaction_1"
+            },
+            {
+              //natural wonders 
+              "Tag": "spring_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movienatural000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movienatural001_NN}}"
+                }
+              },
+              "ID": "reaction_2"
+            },
+            {
+              //prairie king 
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movieprairie000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.movieprairie001_NN}}"
+                }
+              },
+              "ID": "reaction_3"
+            },
+            {
+              //wumbus 
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviewumbus000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviewumbus001_NN}}"
+                }
+              },
+              "ID": "reaction_4"
+            },
+            {
+              //mysterium 
+              "Tag": "fall_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviemysterium000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviemysterium001_NN}}"
+                }
+              },
+              "ID": "reaction_5"
+            },
+            {
+              //it howls 
+              "Tag": "fall_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviehowls000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviehowls001_NN}}"
+                }
+              },
+              "ID": "reaction_6"
+            },
+            {
+              //coldstar ranch
+              "Tag": "winter_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviecoldstar000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviecoldstar001_NN}}"
+                }
+              },
+              "ID": "reaction_7"
+            },
+            {
+              //zuzu city express 
+              "Tag": "winter_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviezuzu000_NN}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n:Caleb.moviezuzu001_NN}}"
+                }
+              },
+              "ID": "reaction_8"
+            }
+          ]
+        }
+      },
+      "When": {
+        "Pipsqueak-Lite Mode": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "Caleb Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Caleb",
+            "Entries": {
+
+    "CalebForest.000": "{{i18n:CalebForest.000}}",
+    "CalebForest.002": "{{i18n:CalebForest.002}}",
+    "CalebSaloon.001": "{{i18n:CalebSaloon.001}}",
+    "CalebSaloon.003": "{{i18n:CalebSaloon.003}}",
+    "CalebBus.001": "{{i18n:CalebBus.001}}",
+    "CalebBus.002": "{{i18n:CalebBus.002_NN}}",
+    "CalebShop.001": "{{i18n:CalebShop.001}}",
+    "CalebShop.002": "{{i18n:CalebShop.002}}",
+            }
+        }
+    ]
+}

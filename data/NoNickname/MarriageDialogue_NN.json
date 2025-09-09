@@ -1,0 +1,540 @@
+{
+  "Changes": [
+    {
+      "LogName": "Caleb Marriage Edit",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "spouseRoom_Caleb": "{{i18n:spouseRoom_Caleb_{{Random: {{Range: 0,6}} }}_NN}}",
+        "patio_Caleb": "{{i18n:Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "SpouseGiftJealous": "{{i18n:spousejealous_Caleb{{Random: {{Range: 1,4}} }}_NN}}",
+        "spring_Caleb": "{{i18n:Spring_Caleb_0_NN}}",
+        "summer_Caleb": "{{i18n:Summer_Caleb_0_NN}}",
+        "fall_Caleb": "{{i18n:Fall_Caleb_0_NN}}",
+        "winter_Caleb": "{{i18n:Winter_Caleb_0_NN}}",
+        //Date specific
+        "spring_1": "{{i18n:Spring_1Spouse{{Random: {{Range: 0,1}} }}_NN}}",
+        "spring_23": "{{i18n:Spring_23Spouse_NN}}",
+        "summer_1": "{{i18n:Summer_1Spouse_NN}}",
+        "summer_8": "{{i18n:Summer_8Spouse_NN}}",
+        "summer_13": "{{i18n:summer_13_spouse_NN}}",
+        "summer_15": "{{i18n:Summer_15Spouse_NN}}",
+        "fall_1": "{{i18n:Fall_1Spouse_NN}}",
+        "fall_8": "{{i18n:Fall_8Spouse_NN}}",
+        "fall_15": "{{i18n:Fall_15Spouse_NN}}",
+        "fall_26": "{{i18n:spiritseve_pre00{{Random: {{Range: 0,1}} }}_NN}}",
+        "winter_1": "{{i18n:Winter_1Spouse_NN}}",
+        "winter_7": "{{i18n:Winter_7Spouse_NN}}",
+        "winter_20": "{{i18n:Winter_20Spouse_NN}}",
+        "winter_28": "{{i18n:Winter_28Spouse0_NN}}",
+        //Kids
+        "OneKid_0": "{{i18n:onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_1": "{{i18n:onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_2": "{{i18n:onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_3": "{{i18n:onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_4": "{{i18n:onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_5": "{{i18n:onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "TwoKids_0": "{{i18n:twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_1": "{{i18n:twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_2": "{{i18n:twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_3": "{{i18n:twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_4": "{{i18n:twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_5": "{{i18n:twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        //Rainy
+        "Rainy_Day_0": "{{i18n:Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_1": "{{i18n:Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_2": "{{i18n:Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_3": "{{i18n:Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_4": "{{i18n:Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Night_0": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_1": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_2": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_3": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_4": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_5": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_Caleb": "{{i18n:Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        //Indoor
+        "Indoor_Day_0": "{{i18n:Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Night_0": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_1": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_2": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_3": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_4": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_Caleb": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        //Outdoor
+        "Outdoor_0": "{{i18n:Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_1": "{{i18n:Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_2": "{{i18n:Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_3": "{{i18n:Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_4": "{{i18n:Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        //Work and Errands
+        "funLeave_Caleb": "{{i18n:errandsLeave_Caleb_5_NN}}",
+        "funReturn_Caleb": "{{i18n:errandsReturn_Caleb_{{Random: {{Range: 0,4}} }}_NN}}",
+        //Heart-level Dependent
+        "Good_0": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_1": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_2": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_3": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_4": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_5": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_6": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_7": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_8": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_9": "{{i18n:Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Neutral_0": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_1": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_2": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_3": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_4": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_5": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_6": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_7": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_8": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_9": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_0": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_1": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_2": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_3": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_4": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_5": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_6": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_7": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_8": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_9": "{{i18n:Bad_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "spouse": "Caleb"
+      }
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Afternoon Change)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "Indoor_Day_0": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Neutral_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "spouse": "Caleb",
+        "TimeOfDay": "Afternoon"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Pregnancy)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "Indoor_Day_0": "{{i18n:P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Night_0": "{{i18n:P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_1": "{{i18n:P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_2": "{{i18n:P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_3": "{{i18n:P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_4": "{{i18n:P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_Caleb": "{{i18n:Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}"
+      },
+      "When": {
+        "Pregnant": "@{{playerName}}"
+      }
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Errands Leave)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "funLeave_Caleb": "{{i18n:errandsLeave_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:errandsReturn_Caleb_{{Random: {{Range: 0,5}} }}_NN}}"
+      },
+      "When": {
+        "DayOfWeek": "Sunday"
+      }
+    },
+    {
+      "LogName": "Caleb Marriage NicknameBaby Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "spouseRoom_Caleb": "{{i18n:Baby.spouseRoom_Caleb_{{Random: {{Range: 0,6}} }}_NN}}",
+        "patio_Caleb": "{{i18n:Baby.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "SpouseGiftJealous": "{{i18n:Baby.spousejealous_Caleb{{Random: {{Range: 1,4}} }}_NN}}",
+        "spring_Caleb": "{{i18n:Baby.Spring_Caleb_0_NN}}",
+        "summer_Caleb": "{{i18n:Baby.Summer_Caleb_0_NN}}",
+        "fall_Caleb": "{{i18n:Baby.Fall_Caleb_0_NN}}",
+        "winter_Caleb": "{{i18n:Baby.Winter_Caleb_0_NN}}",
+        //Date specific
+        "spring_1": "{{i18n:Baby.Spring_1Spouse{{Random: {{Range: 0,1}} }}_NN}}",
+        "spring_23": "{{i18n:Baby.Spring_23Spouse_NN}}",
+        "summer_1": "{{i18n:Baby.Summer_1Spouse_NN}}",
+        "summer_8": "{{i18n:Baby.Summer_8Spouse_NN}}",
+        "summer_15": "{{i18n:Baby.Summer_15Spouse_NN}}",
+        "fall_1": "{{i18n:Baby.Fall_1Spouse_NN}}",
+        "fall_8": "{{i18n:Baby.Fall_8Spouse_NN}}",
+        "fall_15": "{{i18n:Baby.Fall_15Spouse_NN}}",
+        "fall_26": "{{i18n:Baby.spiritseve_pre00{{Random: {{Range: 0,1}} }}_NN}}",
+        "winter_1": "{{i18n:Baby.Winter_1Spouse_NN}}",
+        "winter_7": "{{i18n:Baby.Winter_7Spouse_NN}}",
+        "winter_20": "{{i18n:Baby.Winter_20Spouse_NN}}",
+        "winter_28": "{{i18n:Baby.Winter_28Spouse0_NN}}",
+        //Kids
+        "OneKid_0": "{{i18n:Baby.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_1": "{{i18n:Baby.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_2": "{{i18n:Baby.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_3": "{{i18n:Baby.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_4": "{{i18n:Baby.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_5": "{{i18n:Baby.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "TwoKids_0": "{{i18n:Baby.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_1": "{{i18n:Baby.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_2": "{{i18n:Baby.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_3": "{{i18n:Baby.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_4": "{{i18n:Baby.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_5": "{{i18n:Baby.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        //Rainy
+        "Rainy_Day_0": "{{i18n:Baby.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_1": "{{i18n:Baby.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_2": "{{i18n:Baby.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_3": "{{i18n:Baby.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_4": "{{i18n:Baby.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Night_0": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_1": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_2": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_3": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_4": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_5": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_Caleb": "{{i18n:Baby.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        //Indoor
+        "Indoor_Day_0": "{{i18n:Baby.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Baby.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Baby.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Baby.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Baby.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Night_0": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_1": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_2": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_3": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_4": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_Caleb": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        //Outdoor
+        "Outdoor_0": "{{i18n:Baby.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_1": "{{i18n:Baby.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_2": "{{i18n:Baby.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_3": "{{i18n:Baby.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_4": "{{i18n:Baby.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        //Work and Errands
+        "funLeave_Caleb": "{{i18n:Baby.workLeave_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Baby.workReturn_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        //Heart-level Dependent
+        "Good_0": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_1": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_2": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_3": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_4": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_5": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_6": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_7": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_8": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_9": "{{i18n:Baby.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Neutral_0": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_1": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_2": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_3": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_4": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_5": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_6": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_7": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_8": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_9": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_0": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_1": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_2": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_3": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_4": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_5": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_6": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_7": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_8": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_9": "{{i18n:Baby.Bad_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameBaby"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Baby Afternoon Change)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "Indoor_Day_0": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Baby.Neutral_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "spouse": "Caleb",
+        "TimeOfDay": "Afternoon",
+        "HasFlag": "NicknameBaby"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Baby Pregnancy)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "Indoor_Day_0": "{{i18n:Baby.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Baby.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Baby.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Baby.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Baby.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Night_0": "{{i18n:Baby.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_1": "{{i18n:Baby.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_2": "{{i18n:Baby.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_3": "{{i18n:Baby.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_4": "{{i18n:Baby.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_Caleb": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}"
+      },
+      "When": {
+        "spouse": "Caleb",
+        "Pregnant": "@{{playerName}}",
+        "HasFlag": "NicknameBaby"
+      }
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Baby Errands Leave)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "funLeave_Caleb": "{{i18n:Baby.errandsLeave_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Baby.errandsReturn_Caleb_{{Random: {{Range: 0,5}} }}_NN}}"
+      },
+      "When": {
+        "DayOfWeek": "Sunday",
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameBaby"
+      }
+    },
+    {
+      "LogName": "Caleb Marriage NicknameHoney Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "spouseRoom_Caleb": "{{i18n:Honey.spouseRoom_Caleb_{{Random: {{Range: 0,6}} }}_NN}}",
+        "patio_Caleb": "{{i18n:Honey.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "SpouseGiftJealous": "{{i18n:Honey.spousejealous_Caleb{{Random: {{Range: 1,4}} }}_NN}}",
+        "spring_Caleb": "{{i18n:Honey.Spring_Caleb_0_NN}}",
+        "summer_Caleb": "{{i18n:Honey.Summer_Caleb_0_NN}}",
+        "fall_Caleb": "{{i18n:Honey.Fall_Caleb_0_NN}}",
+        "winter_Caleb": "{{i18n:Honey.Winter_Caleb_0_NN}}",
+        //Date specific
+        "spring_1": "{{i18n:Honey.Spring_1Spouse{{Random: {{Range: 0,1}} }}_NN}}",
+        "spring_23": "{{i18n:Honey.Spring_23Spouse_NN}}",
+        "summer_1": "{{i18n:Honey.Summer_1Spouse_NN}}",
+        "summer_8": "{{i18n:Honey.Summer_8Spouse_NN}}",
+        "summer_15": "{{i18n:Honey.Summer_15Spouse_NN}}",
+        "fall_1": "{{i18n:Honey.Fall_1Spouse_NN}}",
+        "fall_8": "{{i18n:Honey.Fall_8Spouse_NN}}",
+        "fall_15": "{{i18n:Honey.Fall_15Spouse_NN}}",
+        "fall_26": "{{i18n:Honey.spiritseve_pre00{{Random: {{Range: 0,1}} }}_NN}}",
+        "winter_1": "{{i18n:Honey.Winter_1Spouse_NN}}",
+        "winter_7": "{{i18n:Honey.Winter_7Spouse_NN}}",
+        "winter_20": "{{i18n:Honey.Winter_20Spouse_NN}}",
+        "winter_28": "{{i18n:Honey.Winter_28Spouse0_NN}}",
+        //Kids
+        "OneKid_0": "{{i18n:Honey.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_1": "{{i18n:Honey.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_2": "{{i18n:Honey.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_3": "{{i18n:Honey.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_4": "{{i18n:Honey.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "OneKid_5": "{{i18n:Honey.onekid_Caleb_{{Random: {{Range: 0,12}} }}_NN}}",
+        "TwoKids_0": "{{i18n:Honey.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_1": "{{i18n:Honey.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_2": "{{i18n:Honey.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_3": "{{i18n:Honey.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_4": "{{i18n:Honey.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        "TwoKids_5": "{{i18n:Honey.twokids_Caleb_{{Random: {{Range: 0,8}} }}_NN}}",
+        //Rainy
+        "Rainy_Day_0": "{{i18n:Honey.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_1": "{{i18n:Honey.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_2": "{{i18n:Honey.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_3": "{{i18n:Honey.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Day_4": "{{i18n:Honey.Rainy_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Rainy_Night_0": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_1": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_2": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_3": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_4": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_5": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        "Rainy_Night_Caleb": "{{i18n:Honey.Rainy_Night_{{Random: {{Range: 0,5}} }}_NN}}",
+        //Indoor
+        "Indoor_Day_0": "{{i18n:Honey.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Honey.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Honey.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Honey.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Honey.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "Indoor_Night_0": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_1": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_2": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_3": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_4": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Night_Caleb": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}",
+        //Outdoor
+        "Outdoor_0": "{{i18n:Honey.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_1": "{{i18n:Honey.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_2": "{{i18n:Honey.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_3": "{{i18n:Honey.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        "Outdoor_4": "{{i18n:Honey.Outdoor_{{Random: {{Range: 0,12}} }}_NN}}",
+        //Work and Errands
+        "funLeave_Caleb": "{{i18n:Honey.workLeave_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Honey.workReturn_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        //Heart-level Dependent
+        "Good_0": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_1": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_2": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_3": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_4": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_5": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_6": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_7": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_8": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Good_9": "{{i18n:Honey.Good_{{Random: {{Range: 0,14}} }}_NN}}",
+        "Neutral_0": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_1": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_2": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_3": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_4": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_5": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_6": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_7": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_8": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Neutral_9": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_0": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_1": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_2": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_3": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_4": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_5": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_6": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_7": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_8": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Bad_9": "{{i18n:Honey.Bad_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameHoney"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Honey Afternoon Change)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "Indoor_Day_0": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Honey.Neutral_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "spouse": "Caleb",
+        "TimeOfDay": "Afternoon",
+        "HasFlag": "NicknameHoney"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Honey Pregnancy)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "Indoor_Day_0": "{{i18n:Honey.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_1": "{{i18n:Honey.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_2": "{{i18n:Honey.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_3": "{{i18n:Honey.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Day_4": "{{i18n:Honey.P_Indoor_Day_{{Random: {{Range: 0,7}} }}_NN}}",
+        "Indoor_Night_0": "{{i18n:Honey.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_1": "{{i18n:Honey.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_2": "{{i18n:Honey.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_3": "{{i18n:Honey.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_4": "{{i18n:Honey.P_Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}",
+        "Indoor_Night_Caleb": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,6}} }}_NN}}"
+      },
+      "When": {
+        "Pregnant": "@{{playerName}}",
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameHoney"
+      }
+    },
+    {
+      "LogName": "Caleb Marriage Dialogue (Honey Errands Leave)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "funLeave_Caleb": "{{i18n:Honey.errandsLeave_Caleb_{{Random: {{Range: 0,5}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Honey.errandsReturn_Caleb_{{Random: {{Range: 0,5}} }}_NN}}"
+      },
+      "When": {
+        "DayOfWeek": "Sunday",
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameHoney"
+      }
+    },
+    //Wednesday Dialogue Patch
+    {
+      "LogName": "Caleb Marriage Dialogue (Wednesday)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "funLeave_Caleb": "{{i18n:Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday",
+        "Spouse": "Caleb"
+      }
+    },
+    //Wednesday Dialogue Patch-Baby
+    {
+      "LogName": "Caleb Marriage Dialogue (Wednesday)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "funLeave_Caleb": "{{i18n:Baby.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Baby.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday",
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameBaby"
+      }
+    },
+    //Wednesday Dialogue Patch-Honey
+    {
+      "LogName": "Caleb Marriage Dialogue (Wednesday)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueCaleb",
+      "Entries": {
+        "funLeave_Caleb": "{{i18n:Honey.Indoor_Day_{{Random: {{Range: 0,10}} }}_NN}}",
+        "funReturn_Caleb": "{{i18n:Honey.Indoor_Night_{{Random: {{Range: 0,9}} }}_NN}}"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday",
+        "Spouse": "Caleb",
+        "HasFlag": "NicknameHoney"
+      }
+    }
+  ]
+}

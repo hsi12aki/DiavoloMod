@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="3">
+ <properties>
+  <property name="DayTiles" value="Front 1 0 225 Front 1 1 257"/>
+  <property name="NightTiles" value="Front 1 0 1222 Front 1 1 1254"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="3553" name="customfurnituresheet" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="CustomFurnitureSheet.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+3565,3565,3565,3565,3565,3565,
+3597,3597,3597,3597,3597,3597,
+3629,3629,3629,3629,3629,3629,
+2557,2558,605,605,605,605,
+2557,4252,636,604,604,604,
+604,540,604,604,604,604,
+636,604,604,604,604,636,
+604,604,604,636,636,636,
+636,636,636,636,604,604
+</data>
+ </layer>
+ <layer id="11" name="Back2" width="6" height="9">
+  <data encoding="csv">
+3697,0,0,0,0,0,
+3729,3730,0,0,0,0,
+0,0,0,0,0,0,
+0,0,4892,0,0,0,
+0,0,4219,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,4215,0,
+0,0,4184,0,0,0,
+0,0,4216,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,1034,1035,0,0,
+0,0,721,0,0,1258,
+678,679,0,678,679,0,
+515,516,4187,710,711,3684,
+0,0,0,780,834,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,505,506,507,
+0,0,0,537,538,539
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,2184,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,226,0,0,0,0,
+3650,258,0,722,0,3620,
+676,4221,4860,876,877,3652,
+0,0,0,748,0,0,
+0,0,0,0,0,0,
+0,4284,0,0,0,0,
+0,0,0,473,474,475,
+0,0,0,652,1109,1063,
+0,0,0,0,0,3649
+</data>
+ </layer>
+ <layer id="10" name="Front2" width="6" height="9">
+  <data encoding="csv">
+3692,0,0,0,0,3731,
+0,0,0,0,309,3763,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="2" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Caleb.Journal&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

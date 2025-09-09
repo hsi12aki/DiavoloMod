@@ -1,0 +1,19 @@
+{
+  "Changes": [
+    {
+      "LogName": "Caleb Sleep Anim",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries":{ 
+      "caleb_sleep": "29/29/29",
+      "caleb_sitnap": "18/18/18",
+      "caleb_sit": "26/26/26",
+      "caleb_kneel": "22/22/22",
+      "caleb_sitfloorl": "17/17/17",
+      "caleb_pensive": "19/19/19",
+      "caleb_relax1": "20/20/20",
+      "caleb_relax2": "16/16/16"
+      }
+    }
+  ]
+}

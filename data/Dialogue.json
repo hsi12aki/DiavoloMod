@@ -1,0 +1,331 @@
+{
+  "Changes": [
+    {
+      "LogName": "Caleb Dialogue Action",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caleb",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Introduction_Caleb}}",
+        "introquestion_1": "{{i18n:Introduction_1}}",
+        "introquestion_2": "{{i18n:Introduction_2}}",
+        "introquestion_3": "{{i18n:Introduction_3}}",
+        "introquestion_followup": "",
+        "divorced": "{{i18n:Divorced_Caleb}}",
+        "breakUp": "{{i18n:breakUp_Caleb}}",
+        "RejectMermaidPendant_Under10Hearts": "{{i18n:RejectEngage001}}",
+        "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:RejectEngage002}}",
+        "RejectMermaidPendant_AlreadyAccepted": "{{i18n:RejectEngage003}}",
+        "AcceptBouquet": "{{i18n:AcceptBouquet_Caleb}}",
+        "RejectBouquet_AlreadyAccepted": "{{i18n:RejectBouquet_Caleb001}}",
+        "RejectBouquet": "{{i18n:RejectBouquet_Caleb002}}",
+        "MovieInvitation": "{{i18n:MovieInvite_Caleb00{{Random: {{Range: 0,3}} }} }}",
+        // Gift Responses
+        "AcceptGift_(O)613": "{{i18n:giftApple_Caleb00{{Random: {{Range: 0,4}} }} }}",
+        "AcceptGift_(O)342": "{{i18n:giftPickle_Caleb00{{Random: {{Range: 0,1}} }} }}",
+        "AcceptGift_(O)421": "{{i18n:giftSunflower_Caleb00{{Random: {{Range: 0,1}} }} }}",
+        "AcceptGift_(O)Book_QueenOfSauce": "{{i18n:giftQoSBook_Caleb}}",
+        "AcceptGift_(O)566": "{{i18n:giftCelestine_Caleb}}",
+        "AcceptGift_category_fruits": "{{i18n:giftCrops_Caleb00{{Random: {{Range: 0,1}} }} }}",
+        "AcceptGift_category_vegetable": "{{i18n:giftCrops_Caleb00{{Random: {{Range: 0,1}} }} }}",
+        "AcceptGift_category_cooking": "{{i18n:giftMeal_Caleb}}",
+        "AcceptGift_(O)787": "{{i18n:giftBattery_Caleb00{{Random: {{Range: 0,2}} }} }}",
+        "AcceptGift_(O)MossSoup": "{{i18n:giftFiddleheadRisotto_Caleb}}",
+        "AcceptGift_(O)456": "{{i18n:giftFiddleheadRisotto_Caleb}}",
+        "AcceptGift_(O)457": "{{i18n:giftFiddleheadRisotto_Caleb}}",
+        "AcceptGift_(O)203": "{{i18n:giftFiddleheadRisotto_Caleb}}",
+        "AcceptGift_(O)259": "{{i18n:giftFiddleheadFern_Caleb00{{Random: {{Range: 0,2}} }} }}",
+        "AcceptGift_(O)649": "{{i18n:giftFiddleheadRisotto_Caleb}}",
+        "AcceptGift_(O)167": "{{i18n:giftDisliked_Caleb}}",
+        // Festival Responses
+        "danceRejection": "{{i18n:flowerDance_Reject}}",
+        "FlowerDance_Accept": "{{i18n:flowerDance_Accept}}",
+        "FlowerDance_Accept_Spouse": "{{i18n:flowerDance_Accept_spouse}}",
+        "Fair_Judged_PlayerLost": "{{i18n:fairlose}}",
+        "Fair_Judged_PlayerWon": "{{i18n:fairwin}}",
+        "WinterStar_GiveGift_Before": "{{i18n:winterstargift1}}",
+        "WinterStar_GiveGift_Before_Spouse": "{{i18n:winterstargift2_spouse}}",
+        "WinterStar_GiveGift_After": "{{i18n:winterstargift2}}",
+        "WinterStar_GiveGift_After_Spouse": "{{i18n:winterstargift2_spouse}}",
+        "WinterStar_ReceiveGift": "{{i18n:winterstargift.Caleb}}",
+        // Conversation Topics and others
+        "GreenRain": "{{i18n:GreenRain_Caleb}}",
+        "GreenRain_2": "{{i18n:GreenRain2_Caleb}}",
+        "purchasedAnimal_Cow": "{{i18n:dialogue.purchasedAnimal_Cow}}",
+        "purchasedAnimal_Chicken": "{{i18n:dialogue.purchasedAnimal_Chicken}}",
+        "HitBySlingshot": "{{i18n:dialogue.HitBySlingshot}}",
+        "DumpsterDiveComment": "{{i18n:dialogue.DumpsterDiveComment}}",
+        "SpouseGiftJealous": "{{i18n:spousejealous_Caleb{{Random: {{Range: 1,4}} }} }}",
+        "CalebSaloonKey1": "{{i18n:dialogue.CalebSaloonKey1}}",
+        // Day Specific
+        "spring_18": "{{i18n:spring_18}}",
+        "spring_23": "{{i18n:spring_23}}",
+        "summer_3": "{{i18n:summer_03}}",
+        "summer_13": "{{i18n:summer_13_0}}",
+        "fall_26": "{{i18n:fall_26}}",
+        // Location Specific
+        "Saloon_26_18": "{{i18n:CalebSaloon.00{{Random: {{Range: 0,4}} }} }}",
+        "Shiiteyan.SaloonAttic_3_10": "{{i18n:CalebSaloonAttic.3}}",
+        "Shiiteyan.SaloonAttic_9_9": "{{i18n:CalebSaloonAttic.{{Random: {{Range: 1,2}} }} }}",
+        "Shiiteyan.SaloonAttic_10_5": "{{i18n:CalebSaloonAttic.9}}",
+        "BathHouse_Pool2": "{{i18n:CalebBath.00{{Random: {{Range: 0,8}} }} }}"
+      }
+    },
+    {
+      "LogName": "Caleb Attic Dialogue 4+ hearts",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caleb",
+      "Entries": {
+        "Shiiteyan.SaloonAttic_9_9": "{{i18n:CalebSaloonAttic.{{Random: {{Range: 4,8}} }} }}"
+      },
+      "When": {
+        "Hearts:Caleb": "4,5,6,7,8,9,10"
+      }
+    },
+    {
+      "LogName": "Caleb Bathhouse Dialogue Winter",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caleb",
+      "Entries": {
+        "BathHouse_Pool2": "{{i18n:CalebBathWinter.00{{Random: {{Range: 0,8}} }} }}"
+      },
+      "When": {
+        "Season": "Winter"
+      }
+    },
+    {
+      "LogName": "Caleb.Initial.Daily.Dialogue (rain snow)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caleb",
+      "Entries": {
+        "{{Season}}_{{Weekday}}": "{{i18n:{{TimeOfDay}}_{{Random: {{Range: 0,8}} }} }}#$e#{{i18n:{{DailyDialogueWeather}}}}#$action AddMail Current CalebTalkedToday received"
+      },
+      "When": {
+        "Weather": "Rain, Storm, Snow"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb.Initial.Daily.Dialogue (clear weather)",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caleb",
+      "Entries": {
+        "{{Season}}_{{Weekday}}": "{{i18n:{{TimeOfDay}}_{{Random: {{Range: 0,8}} }} }}#$e#{{i18n:{{DailyDialogue}}}}#$action AddMail Current CalebTalkedToday received"
+      },
+      "When": {
+        "Weather": "Sun, Wind"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Caleb.Dialogue.Exhaustive",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caleb",
+      "Entries": {
+        "{{Season}}_{{Weekday}}": "{{i18n:{{TimeOfDay}}_{{Random: {{Range: 0,8}} }} }}"
+      },
+      "When": {
+        "Time": "{{Range: 1200, 2600}}",
+        "HasFlag": "CalebTalkedToday"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Schedule.String.Caleb",
+      "Action": "EditData",
+      "Target": "Strings/Schedules/Caleb",
+      "Entries": {
+        "CalebMuseum": "{{i18n:CalebMuseum.00{{Random: {{Range: 0,1}} }} }}",
+        "CalebBus1": "{{i18n:CalebBus.002}}",
+        "CalebShopping1": "{{i18n:CalebShop.001}}",
+        "CalebShopping2": "{{i18n:CalebShop.002}}",
+        "CalebClinic.2": "{{i18n:CalebClinic.2}}",
+        "CalebShoppingSpouse1": "{{i18n:CalebShopSpouse.000}}",
+        "CalebShoppingSpouse2": "{{i18n:CalebShopSpouse.001}}"
+      }
+    },
+    {
+      "LogName": "Caleb Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Caleb": "{{i18n:giftLoved_Caleb}}/201 613 787 566 74 421 342 Book_QueenOfSauce/{{i18n:giftLiked_Caleb}}/-7 -6 -5 -75 -80 -79 88 176 180 174 182 184 186 340 344 346 348 349 350 614 618 634 635 636 637 638 815 773 595 593 597 591 72 454 445 48 436 424 312 410 400 398 395 373 306 307 303 304 284 282 280 279 278 276 270 268 266 264 260 258 256 254 253 252 250 248 244 243 242 241 240 239 238 231 232 233 234 235 236 237 225 224 226 223 227 222 228 221 229 230 220 213 214 215 218 216 219 212 206 207 208 209 210 205 211 204 202 200 199 195 194 196 192 197 198 190 20 16 24 274 272 423 459 605 606 607 608 610 609 604 648 651 612 611 727 728 729 730 731 732 733 812 772 554 432 430 188 262 402 446 722 376 283 257 281 422 406 418 417 Book_Speed PurpleBook/{{i18n:giftDisliked_Caleb}}/103 101 99 98 97 96 113 114 115 112 107 106 105 109 78 127 126 125 124 123 122 121 579 585 586 587 588 807 766 767 308 305 120 119 118 111 110 108 104 100 116 128 92 769 768 153 157 725 726 796 795 456 440 MossSoup/{{i18n:giftHated_Caleb1}}/167 168 170 171 172 169 259 684 682 649 420 265 203 -20/{{i18n:giftNeutral_Caleb}}/-12 -4 82 80 70 68 66 64 62 774 571 570 569 572 568 573 574 576 567 565 564 562 563 561 560 556 555 553 557 558 559 577 578 543 542 544 545 546 547 549 550 548 552 551 541 575 60 721 723 719 718 716 685 336 334 129 131 132 130 136 137 138 139 140 141 142 143 146 147 148 145 144 150 149 151 154 155 156 158 159 161 163 164 165 162 160 269 267 392 394 397 540 539 538 589 698 699 700 701 702 705 704 707 708 706 734 775 797 798 799 800 814 271 335 337 338 372 393 403 444 715 717 720 117 30 22 18 152 90 412 416 447 428 300 433 404 414 442 408 724 399 396 296 247 86 84"
+      }
+    },
+    {
+      "LogName": "Engagement.Dialogue.Caleb.Edits",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Caleb0": "{{i18n:Cal.PostEngaged0}}",
+        "Caleb1": "{{i18n:Cal.PostEngaged1}}"
+      }
+    },
+    {
+      "LogName": "Engagement.StringsFromCS.Caleb.Edits",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+        "Caleb_Engaged": "{{i18n:Cal.Engaged}}"
+      }
+    },
+    {
+      "LogName": "Engagement.StringsFromCS.Caleb.Edits",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+        "Game1.cs.2782": "{{i18n:Cal.WeddingDay}}"
+      },
+      "When": {
+        "spouse": "Caleb"
+      }
+    },
+    {
+      "LogName": "Summit.ExtraData.Caleb",
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        "SummitEvent_Dialogue3_Caleb": "{{i18n:Cal.Summit0}}\"/emote farmer 32/pause 1000/speak Caleb \"{{i18n:Cal.Summit1}}\"/emote Caleb 40/speak Caleb \"{{i18n:Cal.Summit2}}\"/speak Caleb \"{{i18n:Cal.Summit3}}\"/speak Caleb \"{{i18n:Cal.Summit4}}\"/speak Caleb \"{{i18n:Cal.Summit5}}\"/speak Caleb \"{{i18n:Cal.Summit6}}\"/speak Caleb \"{{i18n:Cal.Summit7}}\"/speak Caleb \"{{i18n:Cal.Summit8}}\""
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Lewis",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Lewis.Gossip000}}",
+        "dating_Caleb": "{{i18n:Lewis.Gossip001}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Sam",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Sam.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Sebastian",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Sebastian.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Harvey",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",
+      "Entries": {
+        "dating_Caleb": "{{i18n:Harvey.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Gus",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Gus.Gossip002}}",
+        "Caleb2heart": "{{i18n:Gus.Gossip000}}",
+        "Caleb4heart": "{{i18n:Gus.Gossip001}}",
+        "CalebSaloonKey1": "{{i18n:Gus.CalebSaloonKey2}}#$action AddMail Current CalebSaloonKeyUnlocked received"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Clint",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",
+      "Entries": {
+        "dating_Caleb": "{{i18n:Clint.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Alex",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        "dating_Caleb": "{{i18n:Alex.Gossip001}}",
+        "Caleb4heart": "{{i18n:Alex.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Haley",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "Caleb2heart": "{{i18n:Haley.Gossip001}}",
+        "Caleb4heart": "{{i18n:Haley.Gossip002}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Demetrius",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "Caleb4heart": "{{i18n:Demetrius.Gossip001}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Robin",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "Caleb4heart": "{{i18n:Robin.Gossip001}}",
+        "Fall": "{{i18n:Robin.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Shane",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Shane",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Shane.Gossip000}}",
+        "Caleb4heart": "{{i18n:Shane.Gossip001}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Marnie",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Marnie",
+      "Entries": {
+        "Caleb4heart": "{{i18n:Marnie.Gossip000}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Abigail",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "Caleb2heart": "{{i18n:Abigail.Gossip000}}",
+        "Caleb4heart": "{{i18n:Abigail.Gossip001}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        "CalebIntroTopic": "{{i18n:Emily.Gossip000}}",
+        "Caleb2heart": "{{i18n:Emily.Gossip001}}",
+        "Caleb4heart": "{{i18n:Emily.Gossip002}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Caroline",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Caroline",
+      "Entries": {
+        "Caleb2heart": "{{i18n:Caroline.Gossip000}}",
+        "dating_Caleb": "{{i18n:Caroline.Gossip001}}"
+      }
+    },
+    {
+      "LogName": "CalebConvoTopics.Penny",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "Entries": {
+        "dating_Caleb": "{{i18n:Penny.Gossip000}}"
+      }
+    }
+  ]
+}

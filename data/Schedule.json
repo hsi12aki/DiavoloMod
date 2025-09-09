@@ -1,0 +1,153 @@
+{
+  "Changes": [
+    {
+      "LogName": "Caleb Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Caleb",
+      "Entries": {
+        "GreenRain": "800 Saloon 26 18 3/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "Thu": "610 Shiiteyan.CalebWarp 6 6 0/2000 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "spring_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //bathhouse visit
+        "summer_20": "900 Town 46 32 2/1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/1930 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "summer_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //bathhouse visit
+        "fall_13": "900 Town 46 32 2/1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/1930 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //clinic visit
+        "fall_20": "610 Forest 96 23 0/810 Forest 37 17 2/1000 Hospital 13 14 0/1330 Hospital 4 6 1 \"Strings\\schedules\\Caleb:CalebClinic.2\"/1600 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "fall_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //bathhouse visit
+        "winter_20": "900 Town 46 32 2/1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0 \"Strings\\schedules\\Caleb:CalebBathWinter\"/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/1930 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "winter_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //pre marriage
+        "rain": "GOTO spring",
+        "rain2": "1230 Saloon 18 17 0/1300 Shiiteyan.SaloonAttic 3 10 0/1800 Town 47 88 0/2100 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring": "610 Forest 96 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer": "610 Forest 96 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall": "610 Forest 96 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter": "700 Mountain 46 20 1/1210 Saloon 24 18 3/1400 Shiiteyan.SaloonAttic 3 10 0/2100 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 1",
+        "spring_fri": "800 Town 18 16 0/1100 Shiiteyan.SaloonAttic 3 10 0/1330 Saloon 18 17 0/1340 Shiiteyan.SaloonAttic 3 10 0/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring_sat": "900 Town 46 32 2/1300 Forest 48 24 3/1800 Forest 66 11 0/2030 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer_fri": "800 Town 18 16 0/1330 Beach 9 14 3/1700 Beach 42 36 2/2000 Saloon 26 18 3/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer_sat": "900 Town 46 32 2/1300 Forest 48 24 3/1800 Forest 66 11 0/2030 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall_fri": "800 Town 18 16 0/1100 Shiiteyan.SaloonAttic 3 10 0/1330 Saloon 18 17 0/1340 Shiiteyan.SaloonAttic 3 10 0/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall_sat": "900 Town 46 32 2/1300 Forest 48 24 3/1800 Forest 66 11 0/2030 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter_fri": "800 Town 18 16 0/1100 Shiiteyan.SaloonAttic 3 10 0/1330 Saloon 18 17 0/1340 Shiiteyan.SaloonAttic 3 10 0/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter_sat": "930 Shiiteyan.SaloonAttic 3 10 0/1330 Mountain 46 20 1/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //marriage
+        "marriage_Thu": "640 Shiiteyan.CalebWarp 6 6 0/2420 bed",
+        "marriage_Wed": "1800 Town 27 23 2/2110 bed",
+        "marriage_Sun": "830 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShoppingSpouse1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShoppingSpouse2\"/1130 SeedShop 5 19 0/1220 Town 75 95 2/1800 BusStop 29 18 2/2110 bed",
+        //marriage clinic visit
+        "marriage_fall_20": "900 Hospital 13 14 0/1330 Hospital 4 6 1 \"Strings\\schedules\\Caleb:CalebClinic.2\"/1600 Town 47 88 0/2000 bed",
+        //marriage bathhouse visits
+        "marriage_summer_20": "1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/2000 bed",
+        "marriage_fall_13": "1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/2000 bed",
+        "marriage_winter_20": "1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/2000 bed"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Friday, Saturday, Sunday"
+      }
+    },
+    //SVE Schedule Patch
+    {
+      "LogName": "Caleb Schedule - SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Caleb",
+      "Entries": {
+        "GreenRain": "800 Saloon 26 18 3/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "Thu": "610 Shiiteyan.CalebWarp 6 6 0/2000 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "spring_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //bathhouse visit
+        "summer_20": "900 Town 46 32 2/1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/1930 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "summer_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //bathhouse visit
+        "fall_13": "900 Town 46 32 2/1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/1930 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //clinic visit
+        "fall_20": "610 Forest 99 23 0/810 Forest 37 17 2/1000 Hospital 13 14 0/1330 Hospital 4 6 1 \"Strings\\schedules\\Caleb:CalebClinic.2\"/1600 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "fall_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //bathhouse visit
+        "winter_20": "900 Town 46 32 2/1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0 \"Strings\\schedules\\Caleb:CalebBathWinter\"/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/1930 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //library visit
+        "winter_26": "800 Town 18 16 0/1100 ArchaeologyHouse 16 5 0 \"Strings\\schedules\\Caleb:CalebMuseum\"/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "rain": "GOTO spring",
+        "rain2": "1230 Saloon 18 17 0/1300 Shiiteyan.SaloonAttic 3 10 0/1800 Town 47 88 0/2100 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring": "610 Forest 99 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer": "610 Forest 99 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall": "610 Forest 99 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter": "700 Mountain 46 20 1/1210 Saloon 24 18 3/1400 Shiiteyan.SaloonAttic 3 10 0/2100 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 1",
+        "spring_fri": "800 Town 18 16 0/1100 Shiiteyan.SaloonAttic 3 10 0/1330 Saloon 18 17 0/1340 Shiiteyan.SaloonAttic 3 10 0/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring_sat": "900 Town 46 32 2/1300 Forest 34 25 2/1800 Forest 68 11 0/2030 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer_fri": "800 Town 18 16 0/1330 Beach 9 14 3/1700 Beach 42 36 2/2000 Saloon 26 18 3/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer_sat": "900 Town 46 32 2/1300 Forest 34 25 2/1800 Forest 68 11 0/2030 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "summer_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall_fri": "800 Town 18 16 0/1100 Shiiteyan.SaloonAttic 3 10 0/1330 Saloon 18 17 0/1340 Shiiteyan.SaloonAttic 3 10 0/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall_sat": "900 Town 46 32 2/1300 Forest 34 25 2/1800 Forest 68 11 0/2030 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "fall_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter_fri": "800 Town 18 16 0/1100 Shiiteyan.SaloonAttic 3 10 0/1330 Saloon 18 17 0/1340 Shiiteyan.SaloonAttic 3 10 0/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter_sat": "930 Shiiteyan.SaloonAttic 3 10 0/1330 Mountain 46 20 1/1740 Saloon 26 18 3/2120 Town 47 71 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "winter_sun": "840 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShopping1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShopping2\"/1130 SeedShop 5 19 0/1230 Saloon 18 17 0/1330 Town 73 54 2/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //Marriage
+        "marriage_Thu": "640 Shiiteyan.CalebWarp 6 6 0/2420 bed",
+        "marriage_Sun": "830 SeedShop 2 23 3 \"Strings\\schedules\\Caleb:CalebShoppingSpouse1\"/1000 SeedShop 15 23 0 \"Strings\\schedules\\Caleb:CalebShoppingSpouse2\"/1130 SeedShop 5 19 0/1220 Town 75 95 2/1800 BusStop 29 18 2/2110 bed",
+        "marriage_Wed": "1800 Town 27 23 2/2110 bed",
+        //marriage clinic visit
+        "marriage_fall_20": "900 Hospital 13 14 0/1330 Hospital 4 6 1 \"Strings\\schedules\\Caleb:CalebClinic.2\"/1600 Town 47 88 0/2000 bed",
+        //bathhouse visits
+        "marriage_summer_20": "1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/2000 bed",
+        "marriage_fall_13": "1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/2000 bed",
+        "marriage_winter_20": "1200 BathHouse_MensLocker 15 19 2/1300 BathHouse_Pool 13 27 0/1500 BathHouse_Pool 18 12 0/1540 BathHouse_Pool 11 13 2/1700 BathHouse_Pool 21 13 3/2000 bed"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Friday, Saturday, Sunday"
+      }
+    },
+    {
+      "LogName": "Caleb Schedule - Thursday", //Because vanilla SDV prioritizes the rain key over day of week keys
+      "Action": "EditData",
+      "Target": "Characters/schedules/Caleb",
+      "Entries": {
+        "GreenRain": "800 Saloon 26 18 3/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "Thu": "610 Shiiteyan.CalebWarp 6 6 0/2000 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "rain": "610 Shiiteyan.CalebWarp 6 6 0/2000 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "rain2": "900 Shiiteyan.SaloonAttic 3 10 0/1230 Shiiteyan.SaloonAttic 9 5 0/1250 Shiiteyan.SaloonAttic 3 10 0/1740 Shiiteyan.SaloonAttic 10 5 2/2420 Shiiteyan.SaloonAttic 9 9 2",
+        "spring": "610 Forest 99 23 0/810 Forest 37 17 2/1000 Town 61 100 2/1300 Saloon 18 17 0/1330 Shiiteyan.SaloonAttic 3 10 0/1800 BusStop 29 18 2 \"Strings\\schedules\\Caleb:CalebBus1\"/2130 Saloon 18 17 0/2230 Saloon 7 6 0/2420 Shiiteyan.SaloonAttic 9 9 2",
+        //Marriage
+        "marriage_Thu": "640 Shiiteyan.CalebWarp 6 6 0/2420 bed"
+      },
+      "When": {
+        "DayOfWeek": "Thursday"
+      }
+    },
+    {
+      "LogName": "Harvey.Caleb Appointment",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Harvey",
+      "Entries": {
+        "fall_20": "730 Hospital 1 5 0/1250 Hospital 10 14 2/1330 Hospital 5 5 2/1410 Hospital 5 6 3 harvey_examine_left/1550 Hospital 5 5 2/1610 Hospital 4 5 0/1630 Hospital 3 15 0/1800 HarveyRoom 9 5 0/2300 HarveyRoom 13 4 1 harvey_sleep"
+      }
+    },
+    {
+      "LogName": "Maru.Caleb Appointment",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Maru",
+      "Entries": {
+        "fall_20": "730 Hospital 6 15 2/1400 Hospital 9 15 3/1600 Hospital 8 17 1/1640 ScienceHouse 26 13 1/2200 ScienceHouse 9 6 1/2400 ScienceHouse 2 4 3 maru_sleep"
+      }
+    }
+  ]
+}

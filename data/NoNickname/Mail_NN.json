@@ -1,0 +1,11 @@
+{
+  "Changes": [
+    {
+      "LogName": "Mail.Caleb",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "CalPicnicInvite": "[letterbg Mods/Shiiteyan.Caleb/MailBackground 0]{{i18n:Mail.Picnic_Caleb_NN}}[#]Captain's Orders"}
+	}
+  ]
+}
