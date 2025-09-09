@@ -1,0 +1,66 @@
+=========================
+## For translators
+=========================
+
+6/7: New i18n entries:
+
+-Cal.Summit0 - Cal.Summit8
+
+Additional fixes for the following entries:
+
+-Spring_1Spouse
+-Baby.Spring_1Spouse
+-Honey.Spring_1Spouse
+-Spring_1Spouse_NN
+-Baby.Spring_1Spouse_NN
+-Honey.Spring_1Spouse_NN
+
+All have been renamed to append "0".
+The corrected entries are now:
+
+-Spring_1Spouse0 
+-Baby.Spring_1Spouse0
+-Honey.Spring_1Spouse0
+-Spring_1Spouse0_NN
+-Baby.Spring_1Spouse0_NN
+-Honey.Spring_1Spouse0_NN
+
+Some variants of onekid_Caleb_11 also incorrectly used "$kid1" instead of the proper token "%kid1" which was corrected.
+
+=========================
+
+5/20: Version update 1.3: There are many new i18n entries. Entries with the suffix '_NN' found at the bottom of the i18n file can safely be ignored, the feature utilizing those entries are targeted for specifically English players.
+
+New i18n entries:
+
+-GreenRain_Caleb
+-Mail.Picnic_Caleb
+-dialogue.CalebSaloonKey1
+
+-MovieInvite_Caleb000 - MovieInvite_Caleb003
+-Caleb.moviesprout000 - Caleb.moviesprout002 
+-Caleb.movienatural000 - Caleb.movienatural001
+-Caleb.movieprairie000 - Caleb.movieprairie001
+-Caleb.moviewumbus000 - Caleb.moviewumbus001
+-Caleb.moviemysterium000 - Caleb.moviemysterium001 
+-Caleb.moviehowls000 - Caleb.moviehowls001
+-Caleb.moviecoldstar000 - Caleb.moviecoldstar001
+-Caleb.moviezuzu000 -Caleb.moviezuzu001
+
+-giftQoSBook_Caleb
+-giftCelestine_Caleb
+-giftCrops_Caleb000 - giftCrops_Caleb002
+-CalebSaloon.000 - CalebSaloon.004
+
+-CalebSaloonAttic.4 - CalebSaloonAttic.9
+-CalebBath.000 - CalebBath.008
+-CalebBathWinter.000 - CalebBathWinter.002
+-Caleb.EarlyRoom0 - Caleb.EarlyRoom1
+-Caleb.Room0 - Caleb.Room4:
+
+-Caleb.Picnic000 - Caleb.Picnic014
+-Caleb.Storm000 - Caleb.Storm010
+-Caleb.Bathhouse001 - Caleb.Bathhouse013
+
+-Gus.CalebSaloonKey2: 
+=========================
