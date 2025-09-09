@@ -1,0 +1,11 @@
+{
+  "Name": "[CP] Diavolo",
+  "Author": "akibanashi",
+  "Version": "1.0.0",
+  "Description": "Diavolo from SWD Obey Me! as a NPC in Stardew Valley.",
+  "UniqueID": "hsi12aki.diavolo",
+  "UpdateKeys": [""],
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
